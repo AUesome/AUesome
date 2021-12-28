@@ -22,10 +22,12 @@
     "ejs": "^3.1.6",
     "express": "^4.17.2",
     "express-session": "^1.17.2",
+    "graphql": "^16.2.0",
     "mongoose": "^6.1.4",
     "mongoose-findorcreate": "^3.0.0",
     "passport": "^0.5.2",
     "passport-google-oauth20": "^2.0.0",
-    "passport-local-mongoose": "^6.1.0"
+    "passport-local-mongoose": "^6.1.0",
+    "stripe": "^8.195.0"
   }
 }
