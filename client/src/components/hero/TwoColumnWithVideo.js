@@ -13,14 +13,14 @@ import { ReactComponent as PlayIcon } from "feather-icons/dist/icons/play-circle
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/dot-pattern.svg";
-import DesignIllustration from "../../images/design-illustration.svg";
+import DesignIllustration from "../../images/logo.png";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
 const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center lg:text-left`;
 const RightColumn = tw.div`relative mt-12 lg:mt-0 flex flex-col justify-center`;
 
-const Heading = tw.h1`font-black text-3xl md:text-5xl leading-snug max-w-3xl`;
+const Heading = tw.h1`font-black text-2xl md:text-4xl leading-snug max-w-2xl`;
 const Paragraph = tw.p`my-5 lg:my-8 text-sm lg:text-base font-medium text-gray-600 max-w-lg mx-auto lg:mx-0`;
 
 const Actions = tw.div`flex flex-col items-center sm:flex-row justify-center lg:justify-start mt-8`;
@@ -59,14 +59,14 @@ const StyledModal = styled(ReactModalAdapter)`
 const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-primary-500`;
 
 export default ({
-  heading = "Modern React Templates, Just For You",
- description="Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.",
-  primaryButtonText="Get Started",
-  primaryButtonUrl="#",
-  watchVideoButtonText="Watch Video",
-  watchVideoYoutubeUrl="https://www.youtube.com/embed/_GuOjXYl5ew",
-  imageSrc=DesignIllustration,
-  imageCss=null,
+  heading = "Bridging the physical and digital world of at home therapy, one kit at a time.",
+  description = "AUesome’s mission is to make therapy more accessible and affordable. Our kits, instructional videos, and app simplify the at-home therapy process for parents of children with special needs.",
+  primaryButtonText = "Get Started",
+  primaryButtonUrl = "#",
+  watchVideoButtonText = "Watch Video",
+  watchVideoYoutubeUrl = "https://www.youtube.com/embed/Nb-OIImcO-0",
+  imageSrc = DesignIllustration,
+  imageCss = null,
   imageDecoratorBlob = false,
 }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -82,7 +82,9 @@ export default ({
             <Heading>{heading}</Heading>
             <Paragraph>{description}</Paragraph>
             <Actions>
-              <PrimaryButton as="a" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton>
+              <PrimaryButton as="a" href={primaryButtonUrl}>
+                {primaryButtonText}
+              </PrimaryButton>
               <WatchVideoButton onClick={toggleModal}>
                 <span className="playIconContainer">
                   <PlayIcon className="playIcon" />
@@ -93,11 +95,7 @@ export default ({
           </LeftColumn>
           <RightColumn>
             <IllustrationContainer>
-              <img
-                css={imageCss}
-                src={imageSrc}
-                alt="Hero"
-              />
+              <img css={imageCss} src={imageSrc} alt="Hero" />
               {imageDecoratorBlob && <DecoratorBlob2 />}
             </IllustrationContainer>
           </RightColumn>
