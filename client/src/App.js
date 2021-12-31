@@ -145,7 +145,6 @@ export default function App() {
           <MainFeature />
           <MainFeature3 />
           <Features3 />
-          <Portfolio />
           <Testimonial2 />
           <FAQ
             imageSrc={customerSupportIllustrationSrc}

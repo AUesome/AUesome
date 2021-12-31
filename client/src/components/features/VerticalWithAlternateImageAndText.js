@@ -43,35 +43,24 @@ const SvgDotPattern4 = tw(
 export default () => {
   const cards = [
     {
-      imageSrc: "../../images/kitsbrown.png",
-      subtitle: "Custom",
-      title: "Therapy Kits",
+      imageSrc: "../images/kit.jpg",
+      subtitle: "Tutorials",
+      title: "Walk-through Videos",
       description:
-        "Customizable at-home therapy kits that focus on communication, sensory, and motor skills. They contain a variety of exercises and activities that parent facilitates. Read our catalog for more information.",
-      url: "/catalog",
-      link: "View Catalog",
-    },
-
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      subtitle: "Free",
-      title: "Rock In Rio, Upstate",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Use our detailed, interactive instructional videos to help you with our activities! We believe in fully guiding you through each and every activity to make at-home therapy the most effective it can be. Our instructional videos will give you ideas for activities to do with the items in our kit.",
       url: "/login",
       link: "View Videos",
     },
 
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
-      subtitle: "Exclusive",
-      title: "Lollapalooza, Manhattan",
+        "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      subtitle: "App",
+      title: "AUesome App",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "",
-      link: "Coming Soon",
+        "Coming soon! Our app includes a preliminary diagnosis and survey, games that provide cognitive training for your child, and instructional videos to help guide you while you work on activities in the kit. AUesome's app is still in development and will be releasing soon later this year.",
+      url: "/login",
+      link: "View Videos",
     },
   ];
 
@@ -79,9 +68,10 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Product</HeadingTitle>
+          <HeadingTitle>Digital Component</HeadingTitle>
           <HeadingDescription>
-            Bridging the digital and physical world of at-home therapy.
+            Enhance your experience using AUesome kits with our digital
+            application.
           </HeadingDescription>
         </HeadingInfoContainer>
 

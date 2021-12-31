@@ -73,7 +73,7 @@ export default ({
   ),
   description = "Customizable at-home therapy kits that focus on communication, sensory, and motor skills. They contain a variety of exercises and activities that parent facilitates. Read our catalog for more information.",
   primaryButtonText = "Learn More",
-  primaryButtonUrl = "https://timerse.com",
+  primaryButtonUrl = "/catalog",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,
