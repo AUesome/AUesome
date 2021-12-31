@@ -51,7 +51,7 @@ import MainFeature3 from "components/features/TwoColWithTwoHorizontalFeaturesAnd
 // import Pricing from "components/pricing/TwoPlansWithDurationSwitcher.js";
 
 // import SliderCard from "components/cards/ThreeColSlider.js";
-// import TrendingCard from "components/cards/TwoTrendingPreviewCardsWithImage.js";
+import TrendingCard from "components/cards/TwoTrendingPreviewCardsWithImage.js";
 // import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
 // import TabGrid from "components/cards/TabCardGrid.js";
 

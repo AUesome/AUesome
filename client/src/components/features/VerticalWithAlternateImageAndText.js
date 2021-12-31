@@ -3,6 +3,8 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
+import d1 from "images/Demo Site.png";
+import d2 from "images/app.png";
 
 const Container = tw.div`relative`;
 
@@ -17,6 +19,13 @@ const Card = styled.div((props) => [
   tw`mt-24 md:flex justify-center items-center`,
   props.reversed ? tw`flex-row-reverse` : "flex-row",
 ]);
+
+const Image3 = styled.img((props) => [
+  props.imageRounded && tw`rounded`,
+  props.imageBorder && tw`border`,
+  props.imageShadow && tw`shadow`,
+]);
+
 const Image = styled.div((props) => [
   `background-image: url("${props.imageSrc}");`,
   tw`rounded md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-80 md:h-144 bg-cover bg-center mx-4 sm:mx-8 md:mx-4 lg:mx-8`,
@@ -43,7 +52,7 @@ const SvgDotPattern4 = tw(
 export default () => {
   const cards = [
     {
-      imageSrc: "../images/kit.jpg",
+      imageSrc: d1,
       subtitle: "Tutorials",
       title: "Walk-through Videos",
       description:
@@ -53,8 +62,7 @@ export default () => {
     },
 
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      imageSrc: d2,
       subtitle: "App",
       title: "AUesome App",
       description:
