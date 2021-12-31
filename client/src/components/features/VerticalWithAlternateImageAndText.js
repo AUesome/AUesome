@@ -4,7 +4,7 @@ import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 import d1 from "images/Demo Site.png";
-import d2 from "images/app.png";
+import d2 from "images/guide.png";
 
 const Container = tw.div`relative`;
 

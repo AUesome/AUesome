@@ -143,20 +143,9 @@ export default function App() {
         <AnimationRevealPage disabled>
           <Hero />
           <MainFeature />
+          <Testimonial2 />
           <MainFeature3 />
           <Features3 />
-          <Testimonial2 />
-          <FAQ
-            imageSrc={customerSupportIllustrationSrc}
-            imageContain={true}
-            imageShadow={false}
-            subheading="FAQs"
-            heading={
-              <>
-                Do you have <span tw="text-primary-500">Questions ?</span>
-              </>
-            }
-          />
           <Footer />
         </AnimationRevealPage>
       </Switch>

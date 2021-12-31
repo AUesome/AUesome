@@ -8,6 +8,7 @@ import {
 } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import StatsIllustrationSrc from "images/stats-illustration.svg";
+import img2 from "images/Combination.png";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 
 const Container = tw.div`relative`;
@@ -56,7 +57,7 @@ export default ({
   description = "Therapy is difficult for neurodiverse children through both geographic and financial barriers – not to mention, it's often not continuos outside of the classroom and lacks parental involvement. AUesome addresses these issues by consolidating clinically proven therapy activities into a kit accompanied by a digital application.",
   primaryButtonText = "Read More",
   primaryButtonUrl = "https://timerse.com",
-  imageSrc = StatsIllustrationSrc,
+  imageSrc = img2,
   imageCss = null,
   imageContainerCss = null,
   imageDecoratorBlob = false,
