@@ -140,7 +140,7 @@ export default function App() {
         <Route path="/">
           <MainLandingPage />
         </Route> */}
-        <AnimationRevealPage>
+        <AnimationRevealPage disabled>
           <Hero />
           <MainFeature />
           <Features />
