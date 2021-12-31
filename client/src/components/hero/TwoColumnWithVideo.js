@@ -60,7 +60,7 @@ const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-p
 
 export default ({
   heading = "Bridging the physical and digital world of at home therapy, one kit at a time.",
-  description = "AUesome’s mission is to make therapy more accessible and affordable. Our kits, instructional videos, and app simplify the at-home therapy process for parents of children with special needs.",
+  description = "AUesome's mission is to make therapy more accessible and affordable. Our kits, instructional videos, and app simplify the at-home therapy process for parents of children with special needs.",
   primaryButtonText = "Get Started",
   primaryButtonUrl = "#",
   watchVideoButtonText = "Watch Video",

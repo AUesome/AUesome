@@ -53,7 +53,7 @@ export default ({
       We are <span tw="text-primary-500">AUesome</span>
     </>
   ),
-  description = 'Therapy is difficult for neurodiverse children through both geographic and financial barriers – not to mention, it\'s often not continuos outside of the classroom and lacks parental involvement. AUesome addresses these issues by consolidating clinically proven therapy activities into a "kit" accompanied by a digital platform .',
+  description = "Therapy is difficult for neurodiverse children through both geographic and financial barriers – not to mention, it's often not continuos outside of the classroom and lacks parental involvement. AUesome addresses these issues by consolidating clinically proven therapy activities into a kit accompanied by a digital application.",
   primaryButtonText = "Read More",
   primaryButtonUrl = "https://timerse.com",
   imageSrc = StatsIllustrationSrc,
@@ -70,7 +70,7 @@ export default ({
   const defaultStatistics = [
     {
       key: "Kits Distributed",
-      value: "217+",
+      value: "210+",
     },
     {
       key: "In Funding",
