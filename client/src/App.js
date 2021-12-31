@@ -103,7 +103,7 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
-import Hero from "components/hero/BackgroundAsImage.js";
+import Hero from "components/hero/TwoColumnWithVideo.js";
 import Features from "components/features/DashedBorderSixFeatures";
 import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
 import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
