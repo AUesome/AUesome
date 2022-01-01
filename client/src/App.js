@@ -94,6 +94,7 @@ import Testimonial2 from "components/testimonials/SimplePrimaryBackground.js";
 // import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 
 /* Inner Pages */
+import HomePage from "pages/Home.js";
 import LoginPage from "pages/Login.js";
 import SignupPage from "pages/Signup.js";
 import PricingPage from "pages/Pricing.js";
@@ -127,30 +128,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      {/* <Switch> */}
-      {/* <Route path="/components/:type/:subtype/:name">
-          <ComponentRenderer />
-        </Route>
-        <Route path="/components/:type/:name">
-          <ComponentRenderer />
-        </Route>
-        <Route path="/thank-you">
-          <ThankYouPage />
-        </Route>
-        <Route path="/">
-          <MainLandingPage />
-        </Route> */}
-      <Route path="/" exact>
-        <AnimationRevealPage disabled>
-          <Hero />
-          <MainFeature />
-          <Testimonial2 />
-          <MainFeature3 />
-          <Features3 />
-          <Footer />
-        </AnimationRevealPage>
-        {/* </Switch> */}
-      </Route>
+      <Route path="/" component={HomePage} exact />
       <Route path="/about" component={AboutUsPage} exact />
       <Route path="/blog" component={BlogIndexPage} exact />
       <Route path="/catalog" component={PricingPage} exact />
