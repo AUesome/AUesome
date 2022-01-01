@@ -3,7 +3,7 @@ import "styles/globalStyles.css";
 import React from "react";
 import tw from "twin.macro"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import AnimationRevealPage from "helpers/AnimationRevealPage.js"; //eslint-disable-line
 
 /*
  * This is the entry point component of this project. You can change the below exported default App component to any of
@@ -37,12 +37,12 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 // import Features from "components/features/ThreeColSimple.js";
 // import Features from "components/features/ThreeColWithSideImage.js";
 // import Features from "components/features/ThreeColWithSideImageWithPrimaryBackground.js";
-import Features3 from "components/features/VerticalWithAlternateImageAndText.js";
+// import Features3 from "components/features/VerticalWithAlternateImageAndText.js";
 // import Features from "components/features/DashedBorderSixFeatures";
 // import MainFeature from "components/features/TwoColWithButton.js";
 // import MainFeature from "components/features/TwoColSingleFeatureWithStats.js";
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
-import MainFeature3 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
+// import MainFeature3 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 // import FeatureWithSteps from "components/features/TwoColWithSteps.js";
 // import FeatureStats from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
 
@@ -51,7 +51,7 @@ import MainFeature3 from "components/features/TwoColWithTwoHorizontalFeaturesAnd
 // import Pricing from "components/pricing/TwoPlansWithDurationSwitcher.js";
 
 // import SliderCard from "components/cards/ThreeColSlider.js";
-import TrendingCard from "components/cards/TwoTrendingPreviewCardsWithImage.js";
+// import TrendingCard from "components/cards/TwoTrendingPreviewCardsWithImage.js";
 // import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
 // import TabGrid from "components/cards/TabCardGrid.js";
 
@@ -64,7 +64,7 @@ import TrendingCard from "components/cards/TwoTrendingPreviewCardsWithImage.js";
 // import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 // import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
 // import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
-import Testimonial2 from "components/testimonials/SimplePrimaryBackground.js";
+// import Testimonial2 from "components/testimonials/SimplePrimaryBackground.js";
 
 // import FAQ from "components/faqs/SimpleWithSideImage.js";
 // import FAQ from "components/faqs/SingleCol.js";
@@ -104,21 +104,21 @@ import BlogIndexPage from "pages/BlogIndex.js";
 import TermsOfServicePage from "pages/TermsOfService.js";
 import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
-import Hero from "components/hero/TwoColumnWithVideo.js";
-import Features from "components/features/DashedBorderSixFeatures";
-import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
-import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
-import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
-import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
-import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
-import FAQ from "components/faqs/SimpleWithSideImage.js";
-import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
-import Footer from "components/footers/MiniCenteredFooter.js";
-import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
+// import Hero from "components/hero/TwoColumnWithVideo.js";
+// import Features from "components/features/DashedBorderSixFeatures";
+// import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
+// import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
+// import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
+// import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
+// import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
+// import FAQ from "components/faqs/SimpleWithSideImage.js";
+// import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
+// import Footer from "components/footers/MiniCenteredFooter.js";
+// import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
 
-import ComponentRenderer from "ComponentRenderer.js";
-import MainLandingPage from "MainLandingPage.js";
-import ThankYouPage from "ThankYouPage.js";
+// import ComponentRenderer from "ComponentRenderer.js";
+// import MainLandingPage from "MainLandingPage.js";
+// import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter, Route } from "react-router-dom";
 
@@ -135,6 +135,8 @@ export default function App() {
       <Route path="/contact" component={ContactUsPage} exact />
       <Route path="/login" component={LoginPage} exact />
       <Route path="/signup" component={SignupPage} exact />
+      <Route path="/privacy" component={PrivacyPolicyPage} exact />
+      <Route path="/terms" component={TermsOfServicePage} exact />
     </BrowserRouter>
   );
 }
