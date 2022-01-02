@@ -133,8 +133,24 @@ export default function App() {
       <Route path="/blog" component={BlogIndexPage} exact />
       <Route path="/catalog" component={PricingPage} exact />
       <Route path="/contact" component={ContactUsPage} exact />
-      <Route path="/login" component={LoginPage} exact />
-      <Route path="/signup" component={SignupPage} exact />
+      {/* <Route path="/login" component={LoginPage} exact /> */}
+      {/* <Route path="/signup" component={SignupPage} exact /> */}
+      <Route
+        path="/login"
+        component={() => {
+          window.location.href = "https://dashboard.auesome.co/login";
+          return null;
+        }}
+        exact
+      />
+      <Route
+        path="/signup"
+        component={() => {
+          window.location.href = "https://dashboard.auesome.co/signup";
+          return null;
+        }}
+        exact
+      />
       <Route path="/privacy" component={PrivacyPolicyPage} exact />
       <Route path="/terms" component={TermsOfServicePage} exact />
     </BrowserRouter>
