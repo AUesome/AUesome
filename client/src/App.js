@@ -1,9 +1,40 @@
-import "tailwindcss/dist/base.css";
-import "styles/globalStyles.css";
-import React from "react";
-import tw from "twin.macro"; //eslint-disable-line
-import { css } from "styled-components/macro"; //eslint-disable-line
-import AnimationRevealPage from "helpers/AnimationRevealPage.js"; //eslint-disable-line
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+// // Routing
+// import PrivateRoute from "./components/routing/PrivateRoute";
+
+// // Screens
+// import PrivateScreen from "./components/screens/PrivateScreen";
+// import LoginScreen from "./components/screens/LoginScreen";
+// import RegisterScreen from "./components/screens/RegisterScreen";
+// import ForgotPasswordScreen from "./components/screens/ForgotPasswordScreen";
+// import ResetPasswordScreen from "./components/screens/ResetPasswordScreen";
+
+// const App = () => {
+//   return (
+//     <Router>
+//       <div className="app">
+//         <Switch>
+//           <PrivateRoute exact path="/dashboard" component={PrivateScreen} />
+//           <Route exact path="/login" component={LoginScreen} />
+//           <Route exact path="/register" component={RegisterScreen} />
+//           <Route
+//             exact
+//             path="/forgotpassword"
+//             component={ForgotPasswordScreen}
+//           />
+//           <Route
+//             exact
+//             path="/passwordreset/:resetToken"
+//             component={ResetPasswordScreen}
+//           />
+//         </Switch>
+//       </div>
+//     </Router>
+//   );
+// };
+
+// export default App;
 
 /*
  * This is the entry point component of this project. You can change the below exported default App component to any of
@@ -93,17 +124,6 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js"; //eslint-disab
 // import ServiceLandingPage from "demos/ServiceLandingPage.js";
 // import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 
-/* Inner Pages */
-import HomePage from "pages/Home.js";
-import LoginPage from "pages/Login.js";
-import SignupPage from "pages/Signup.js";
-import PricingPage from "pages/Pricing.js";
-import AboutUsPage from "pages/AboutUs.js";
-import ContactUsPage from "pages/ContactUs.js";
-import BlogIndexPage from "pages/BlogIndex.js";
-import TermsOfServicePage from "pages/TermsOfService.js";
-import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
-
 // import Hero from "components/hero/TwoColumnWithVideo.js";
 // import Features from "components/features/DashedBorderSixFeatures";
 // import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
@@ -120,40 +140,79 @@ import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 // import MainLandingPage from "MainLandingPage.js";
 // import ThankYouPage from "ThankYouPage.js";
 
-import { BrowserRouter, Route } from "react-router-dom";
+import "tailwindcss/dist/base.css";
+import "styles/globalStyles.css";
+import React from "react";
+import tw from "twin.macro"; //eslint-disable-line
+import { css } from "styled-components/macro"; //eslint-disable-line
+import AnimationRevealPage from "helpers/AnimationRevealPage.js"; //eslint-disable-line
+import HomePage from "pages/Home.js"; //eslint-disable-line
+import LoginPage from "pages/Login.js"; //eslint-disable-line
+import SignupPage from "pages/Signup.js"; //eslint-disable-line
+import PricingPage from "pages/Pricing.js"; //eslint-disable-line
+import AboutUsPage from "pages/AboutUs.js"; //eslint-disable-line
+import ContactUsPage from "pages/ContactUs.js"; //eslint-disable-line
+import BlogIndexPage from "pages/BlogIndex.js"; //eslint-disable-line
+import TermsOfServicePage from "pages/TermsOfService.js"; //eslint-disable-line
+import PrivacyPolicyPage from "pages/PrivacyPolicy.js"; //eslint-disable-line
+// import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+// Routing
+import PrivateRoute from "./components/routing/PrivateRoute";
+
+// Screens
+import PrivateScreen from "./components/screens/PrivateScreen";
+import LoginScreen from "./components/screens/LoginScreen";
+import RegisterScreen from "./components/screens/RegisterScreen";
+import ForgotPasswordScreen from "./components/screens/ForgotPasswordScreen";
+import ResetPasswordScreen from "./components/screens/ResetPasswordScreen";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
 
   return (
-    <BrowserRouter>
-      <Route path="/" component={HomePage} exact />
-      <Route path="/about" component={AboutUsPage} exact />
-      <Route path="/blog" component={BlogIndexPage} exact />
-      <Route path="/catalog" component={PricingPage} exact />
-      <Route path="/contact" component={ContactUsPage} exact />
-      {/* <Route path="/login" component={LoginPage} exact /> */}
-      {/* <Route path="/signup" component={SignupPage} exact /> */}
-      <Route
-        path="/login"
-        component={() => {
-          window.location.href = "https://dashboard.auesome.co/login";
-          return null;
-        }}
-        exact
-      />
-      <Route
-        path="/signup"
-        component={() => {
-          window.location.href = "https://dashboard.auesome.co/signup";
-          return null;
-        }}
-        exact
-      />
-      <Route path="/privacy" component={PrivacyPolicyPage} exact />
-      <Route path="/terms" component={TermsOfServicePage} exact />
-    </BrowserRouter>
+    <Router>
+      <Switch>
+        <Route path="/" component={HomePage} exact />
+        <Route path="/about" component={AboutUsPage} exact />
+        <Route path="/blog" component={BlogIndexPage} exact />
+        <Route path="/catalog" component={PricingPage} exact />
+        <Route path="/contact" component={ContactUsPage} exact />
+        {/* <Route path="/login" component={LoginPage} exact /> */}
+        {/* <Route path="/signup" component={SignupPage} exact /> */}
+        {/* <Route
+          path="/login"
+          component={() => {
+            window.location.href = "https://dashboard.auesome.co/login";
+            return null;
+          }}
+          exact
+        />
+        <Route
+          path="/signup"
+          component={() => {
+            window.location.href = "https://dashboard.auesome.co/signup";
+            return null;
+          }}
+          exact
+        /> */}
+        {/* <Route path="/privacy" component={PrivacyPolicyPage} exact /> */}
+        {/* <Route path="/terms" component={TermsOfServicePage} exact /> */}
+        {/* <div className="app"> */}
+        <PrivateRoute exact path="/dashboard" component={PrivateScreen} />
+        <Route exact path="/login" component={LoginScreen} />
+        <Route exact path="/register" component={RegisterScreen} />
+        <Route exact path="/forgotpassword" component={ForgotPasswordScreen} />
+        <Route
+          exact
+          path="/passwordreset/:resetToken"
+          component={ResetPasswordScreen}
+        />
+        {/* </div> */}
+      </Switch>
+    </Router>
   );
 }
 
