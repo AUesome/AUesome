@@ -146,13 +146,13 @@ import React from "react";
 import tw from "twin.macro"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js"; //eslint-disable-line
-import HomePage from "pages/Home.js"; //eslint-disable-line
-import LoginPage from "pages/Login.js"; //eslint-disable-line
-import SignupPage from "pages/Signup.js"; //eslint-disable-line
-import PricingPage from "pages/Pricing.js"; //eslint-disable-line
-import AboutUsPage from "pages/AboutUs.js"; //eslint-disable-line
-import ContactUsPage from "pages/ContactUs.js"; //eslint-disable-line
-import BlogIndexPage from "pages/BlogIndex.js"; //eslint-disable-line
+import HomePage from "pages/Home.js";
+import LoginPage from "pages/Login.js";
+import RegisterPage from "pages/Register.js";
+import PricingPage from "pages/Pricing.js";
+import AboutUsPage from "pages/AboutUs.js";
+import ContactUsPage from "pages/ContactUs.js";
+import BlogIndexPage from "pages/BlogIndex.js";
 import TermsOfServicePage from "pages/TermsOfService.js"; //eslint-disable-line
 import PrivacyPolicyPage from "pages/PrivacyPolicy.js"; //eslint-disable-line
 // import { BrowserRouter, Route } from "react-router-dom";
@@ -180,30 +180,9 @@ export default function App() {
         <Route path="/blog" component={BlogIndexPage} exact />
         <Route path="/catalog" component={PricingPage} exact />
         <Route path="/contact" component={ContactUsPage} exact />
-        {/* <Route path="/login" component={LoginPage} exact /> */}
-        {/* <Route path="/signup" component={SignupPage} exact /> */}
-        {/* <Route
-          path="/login"
-          component={() => {
-            window.location.href = "https://dashboard.auesome.co/login";
-            return null;
-          }}
-          exact
-        />
-        <Route
-          path="/signup"
-          component={() => {
-            window.location.href = "https://dashboard.auesome.co/signup";
-            return null;
-          }}
-          exact
-        /> */}
-        {/* <Route path="/privacy" component={PrivacyPolicyPage} exact /> */}
-        {/* <Route path="/terms" component={TermsOfServicePage} exact /> */}
-        {/* <div className="app"> */}
         <PrivateRoute exact path="/dashboard" component={PrivateScreen} />
-        <Route exact path="/login" component={LoginScreen} />
-        <Route exact path="/register" component={RegisterScreen} />
+        <Route exact path="/login" component={LoginPage} />
+        <Route exact path="/register" component={RegisterPage} />
         <Route exact path="/forgotpassword" component={ForgotPasswordScreen} />
         <Route
           exact
