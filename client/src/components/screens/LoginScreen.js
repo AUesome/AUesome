@@ -176,6 +176,7 @@ const LoginScreen = ({ history }) => {
               role="button"
               type="button"
               className="login-with-google-btn"
+              style={{ height: "50px" }}
             >
               Sign in with Google
             </a>
@@ -231,7 +232,7 @@ const LoginScreen = ({ history }) => {
             <div class="text-center" style={{ paddingTop: "12px" }}>
               <Link to="/forgotpassword">
                 <span class="txt1"> Forgot </span>
-                <span class="txt2"> Password </span>
+                <span class="txt1"> Password </span>
               </Link>
             </div>
             <div className="text-center" style={{ paddingTop: "30px" }}>
