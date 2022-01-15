@@ -533,3 +533,6 @@ iframe {
   text-decoration: inherit;
   color: inherit;
 }
+.text-center {
+  text-align: center;
+}
