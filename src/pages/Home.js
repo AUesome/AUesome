@@ -15,7 +15,7 @@ import MainFeature3 from "components/features/TwoColWithTwoHorizontalFeaturesAnd
 import Testimonial2 from "components/testimonials/SimplePrimaryBackground.js";
 import Hero from "components/hero/TwoColumnWithVideo.js";
 import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
-import Footer from "components/footers/MiniCenteredFooter.js";
+import Footer from "components/footers/FiveColumnWithInputForm.js";
 
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 

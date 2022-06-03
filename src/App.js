@@ -107,6 +107,7 @@ import ThankYouPage from "ThankYouPage.js";
 
 import Home from "pages/Home.js";
 import About from "pages/AboutUs.js";
+import Blog from "pages/BlogIndex.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -119,6 +120,7 @@ export default function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/about" component={About} exact />
+        <Route path="/blog" component={Blog} exact />
       </Switch>
     </Router>
   );
