@@ -14,9 +14,12 @@ import Features3 from "components/features/VerticalWithAlternateImageAndText.js"
 import MainFeature3 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 import Testimonial2 from "components/testimonials/SimplePrimaryBackground.js";
 import Hero from "components/hero/TwoColumnWithVideo.js";
-import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
-import Footer from "components/footers/FiveColumnWithInputForm.js";
-
+import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton";
+import Footer from "components/footers/SimpleFiveColumn";
+import feature1 from "images/features/1.png";
+import feature2 from "images/features/2.png";
+import feature3 from "images/features/3.png";
+import Blog from "components/blogs/GridWithFeaturedPost";
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 
 export default () => {
@@ -25,36 +28,31 @@ export default () => {
       <Hero />
       <MainFeature />
       <MainFeature1
-        subheading={<Subheading>About Treact</Subheading>}
-        heading="We are a modern design agency."
+        subheading={<Subheading>Therapy Kit</Subheading>}
+        heading="Custom at-home therapy kits"
+        description="Customizable at-home therapy kits that help children with special needs improve communication, sensory, and motor skills with various activities. To help us fund our kits, be sure to support us on GoFundMe! Order an AUesome kit by signing up below."
         buttonRounded={false}
-        primaryButtonText="See Portfolio"
-        imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+        primaryButtonText="Sign Up!"
+        imageSrc={feature1}
       />
       <MainFeature1
-        subheading={<Subheading>Our Vision</Subheading>}
-        heading="We aim to disrupt the design space."
+        subheading={<Subheading>Digital Integration</Subheading>}
+        heading="Walk-through guidance videos"
+        description="Use our detailed, interactive instructional videos to help you with each therapy activities to make at-home therapy as enjoyable, creative, and effective as possible. Our instructional videos will give you ideas for activities to do with the items in our kit."
         buttonRounded={false}
-        primaryButtonText="Contact Us"
-        imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
+        primaryButtonText="Dashboard"
+        imageSrc={feature2}
         textOnLeft={false}
       />
       <MainFeature1
-        subheading={<Subheading>About Treact</Subheading>}
-        heading="We are a modern design agency."
+        subheading={<Subheading>Accompanying App</Subheading>}
+        heading="AUesome mobile digital application"
+        description="Coming soon! Our app includes a preliminary diagnosis and survey, games that provide cognitive training for your child, and instructional videos to help guide you while you work on activities in the kit. Support our app's development on our GoFundMe page!"
         buttonRounded={false}
-        primaryButtonText="See Portfolio"
-        imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+        primaryButtonText="GoFundMe"
+        imageSrc={feature3}
       />
-      <MainFeature1
-        subheading={<Subheading>About Treact</Subheading>}
-        heading="We are a modern design agency."
-        buttonRounded={false}
-        primaryButtonText="See Portfolio"
-        imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
-      />
-
-      <Footer />
+      <Blog />
     </AnimationRevealPage>
   );
 };

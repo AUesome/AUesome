@@ -7,7 +7,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
 // import logo from "../../images/mini-auesome-logo.png";
-import logo from "../../images/logo.svg";
+import logo from "../../images/mini-auesome-logo.png";
 
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
@@ -84,11 +84,11 @@ export default ({
       <NavLink href="/blog">Blog</NavLink>
       <NavLink href="/catalog">Catalog</NavLink>
       <NavLink href="/contact">Contact</NavLink>
-      <NavLink href="/login" tw="lg:ml-12!">
-        Login
+      <NavLink href="https://dashboard.auesome.co" tw="lg:ml-12!">
+        Dashboard
       </NavLink>
       <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/signup">
-        Sign Up
+        Sign up
       </PrimaryLink>
     </NavLinks>,
   ];
