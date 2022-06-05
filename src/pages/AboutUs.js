@@ -9,6 +9,7 @@ import MainFeature1 from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColSingleFeatureWithStats.js";
 import MainFeature3 from "components/features/TwoColSingleFeatureWithStats2.js";
 import Features from "components/features/ThreeColSimple.js";
+import About from "components/testimonials/TwoColumnWithImageAndProfilePictureReview";
 // import Features from "components/features/ThreeColWithSideImage.js";
 import TeamCardGrid from "components/cards/ProfileThreeColGrid.js";
 
@@ -21,6 +22,7 @@ export default () => {
   return (
     <AnimationRevealPage disabled>
       <Header />
+      <About />
       <MainFeature1
         subheading={<Subheading>About Treact</Subheading>}
         heading="We are a modern design agency."

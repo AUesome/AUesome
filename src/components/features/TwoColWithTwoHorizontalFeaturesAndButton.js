@@ -75,7 +75,7 @@ export default ({
   description1 = "Therapy for children on the autism spectrum is both financially and geographically inaccessible, while often being non-continuous outside of classrooms and lacking parental involvement.",
   description2 = "AUesome addresses these limitations by consolidating clinically proven therapy activities into a kit accompanied by a digital platform. Our activities, kits, and digital instructional platform simplify the therapy process for parents and educators of children with special needs.",
   primaryButtonText = "About Us",
-  primaryButtonUrl = "https://timerse.com",
+  primaryButtonUrl = "/about",
   imageSrc = VennDiagram,
   buttonRounded = true,
   imageRounded = true,

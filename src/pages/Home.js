@@ -10,16 +10,14 @@ import {
 
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import MainFeature1 from "components/features/TwoColWithButton.js";
-import Features3 from "components/features/VerticalWithAlternateImageAndText.js";
-import MainFeature3 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
-import Testimonial2 from "components/testimonials/SimplePrimaryBackground.js";
 import Hero from "components/hero/TwoColumnWithVideo.js";
 import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton";
 import Footer from "components/footers/SimpleFiveColumn";
 import feature1 from "images/features/1.png";
 import feature2 from "images/features/2.png";
 import feature3 from "images/features/3.png";
-import Blog from "components/blogs/GridWithFeaturedPost";
+import Blog from "components/blogs/PopularAndRecentBlogPosts";
+import Mission from "components/testimonials/TwoColumnWithImageAndRating";
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 
 export default () => {
@@ -52,7 +50,9 @@ export default () => {
         primaryButtonText="GoFundMe"
         imageSrc={feature3}
       />
+      <Mission />
       <Blog />
+      <Footer />
     </AnimationRevealPage>
   );
 };

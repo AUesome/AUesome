@@ -10,6 +10,8 @@ import {
 import { SectionDescription } from "components/misc/Typography";
 import { ReactComponent as SvgDotPatternIcon } from "images/dot-pattern.svg";
 import Exercise from "images/blog/exercise.png";
+import AI from "images/blog/ai.png";
+import Eating from "images/blog/eating.png";
 
 const HeadingContainer = tw.div`text-center`;
 const Subheading = tw(SubheadingBase)`mb-4`;
@@ -74,7 +76,7 @@ const DecoratorBlob2 = tw(
 
 export default ({
   subheading = "",
-  heading = "We love writing.",
+  heading = "Recent Blog Posts",
   description = "",
   posts = [
     {
@@ -88,8 +90,7 @@ export default ({
       featured: true,
     },
     {
-      postImageSrc:
-        "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
+      postImageSrc: Eating,
       title: "Getting the most out of your vacation",
       authorName: "Aaron Patterson",
       url: "https://reddit.com",
@@ -107,6 +108,7 @@ export default ({
       title: "Hiking during the monsoon in Asia",
       authorName: "Tony Hawk",
       url: "https://timerse.com",
+      featured: true,
     },
     {
       postImageSrc:

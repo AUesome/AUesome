@@ -8,6 +8,7 @@ import Header from "components/headers/light.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton } from "components/misc/Buttons";
+import Exercise from "images/blog/exercise.png";
 
 const HeadingRow = tw.div`flex`;
 const Heading = tw(SectionHeading)`text-gray-900`;
@@ -53,14 +54,25 @@ export default ({
   headingText = "Blog Posts",
   posts = [
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
-      category: "Travel Tips",
-      date: "April 21, 2020",
-      title: "Safely Travel in Foreign Countries",
+      imageSrc: Exercise,
+      date: "May 2022",
+      author: "Saisri Tangirala",
+      editor: "Anshul Gupta",
+      title: "The Benefits of Exercise for Children with Autism",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com",
+        "Engaging in physical activity such as sports has shown to be beneficial in many aspects, especially for children on the autism spectrum. Physical activity may assist develop a variety of abilities and contribute to better overall health.",
+      url: "/the-benefits-of-exercise-for-children-with-autism/",
+      featured: true,
+    },
+    {
+      imageSrc: Exercise,
+      date: "May 2022",
+      author: "Saisri Tangirala",
+      editor: "Anshul Gupta",
+      title: "The Benefits of Exercise for Children with Autism",
+      description:
+        "Engaging in physical activity such as sports has shown to be beneficial in many aspects, especially for children on the autism spectrum. Physical activity may assist develop a variety of abilities and contribute to better overall health.",
+      url: "/the-benefits-of-exercise-for-children-with-autism/",
       featured: true,
     },
     getPlaceholderPost(),
@@ -101,8 +113,8 @@ export default ({
                 <Post className="group" as="a" href={post.url}>
                   <Image imageSrc={post.imageSrc} />
                   <Info>
-                    <Category>{post.category}</Category>
-                    <CreationDate>{post.date}</CreationDate>
+                    <Category>{post.date}</Category>
+                    <CreationDate>{post.author}</CreationDate>
                     <Title>{post.title}</Title>
                     {post.featured && post.description && (
                       <Description>{post.description}</Description>
