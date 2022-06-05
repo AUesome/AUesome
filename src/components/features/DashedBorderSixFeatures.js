@@ -10,7 +10,11 @@ import defaultCardImage from "../../images/shield-icon.svg";
 import { ReactComponent as SvgDecoratorBlob3 } from "../../images/svg-decorator-blob-3.svg";
 
 import SupportIconImage from "../../images/support-icon.svg";
-import ShieldIconImage from "../../images/shield-icon.svg";
+// import { ReactComponent as Heart } from "./heart.svg";
+// import { ReactComponent as Heart } from "feather-icons/dist/icons/briefcase.svg";
+import Heart from "../../images/heart.svg";
+import Warning from "../../images/alert-circle.svg";
+import Sun from "../../images/sun.svg";
 import CustomizeIconImage from "../../images/customize-icon.svg";
 import FastIconImage from "../../images/fast-icon.svg";
 import ReliableIconImage from "../../images/reliable-icon.svg";
@@ -19,7 +23,7 @@ import SimpleIconImage from "../../images/simple-icon.svg";
 const Container = tw.div`relative`;
 
 const ThreeColumnContainer = styled.div`
-  ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-24`}
+  ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto`}
 `;
 const Heading = tw(SectionHeading)`w-full`;
 
@@ -64,21 +68,34 @@ export default () => {
 
   const cards = [
     {
-      imageSrc: ShieldIconImage,
-      title: "Ads Management",
-      description: "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou."
+      imageSrc: Heart,
+      title: "Mission",
+      description:
+        "AUesome's mission is to make therapy accessible and affordable. Our kits, instructional videos, and app simplify the at-home therapy process for parents of children with special needs. We hope to eliminate the physical and financial barriers to receiving therapy.",
     },
-    { imageSrc: SupportIconImage, title: "Video Marketing" },
-    { imageSrc: CustomizeIconImage, title: "Customer Relation" },
-    { imageSrc: ReliableIconImage, title: "Product Outreach" },
-    { imageSrc: FastIconImage, title: "PR Campaign" },
-    { imageSrc: SimpleIconImage, title: "Product Expansion" }
+    {
+      imageSrc: Warning,
+      title: "The Problem",
+      description:
+        "Despite 1 in 54 children having autism spectrum disorder in the US, 50% of those with severe ASD only have access to school-based treatment and 17% have no access to any treatment whatsoever, with these numbers growing drastically. (CDC)",
+    },
+    {
+      imageSrc: Sun,
+      title: "Inspiration",
+      description:
+        "From our experiences working with individuals with special needs in the neurodiverse community and receiving therapy, we recognized the inaccessibility, lack of continuation, and low parental involvement for autism therapy services.",
+    },
+    // { imageSrc: ReliableIconImage, title: "Product Outreach" },
+    // { imageSrc: FastIconImage, title: "PR Campaign" },
+    // { imageSrc: SimpleIconImage, title: "Product Expansion" }
   ];
 
   return (
     <Container>
       <ThreeColumnContainer>
-        <Heading>Our Professional <span tw="text-primary-500">Services</span></Heading>
+        {/* <Heading>
+          Our Professional <span tw="text-primary-500">Services</span>
+        </Heading> */}
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
@@ -88,7 +105,8 @@ export default () => {
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description">
-                  {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud. Sic Semper Tyrannis. Neoas Calie artel."}
+                  {card.description ||
+                    "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud. Sic Semper Tyrannis. Neoas Calie artel."}
                 </p>
               </span>
             </Card>

@@ -12,7 +12,7 @@ import Features from "components/features/ThreeColSimple.js";
 import About from "components/testimonials/TwoColumnWithImageAndProfilePictureReview";
 // import Features from "components/features/ThreeColWithSideImage.js";
 import TeamCardGrid from "components/cards/ProfileThreeColGrid.js";
-
+import Mission from "components/features/DashedBorderSixFeatures";
 import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import CustomerLoveIconImage from "images/simple-icon.svg";
@@ -23,6 +23,7 @@ export default () => {
     <AnimationRevealPage disabled>
       <Header />
       <About />
+      <Mission />
       <MainFeature1
         subheading={<Subheading>About Treact</Subheading>}
         heading="We are a modern design agency."
