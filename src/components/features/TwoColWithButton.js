@@ -89,6 +89,8 @@ export default ({
             <PrimaryButton
               buttonRounded={buttonRounded}
               as="a"
+              target="_blank"
+              rel="noopener noreferrer"
               href={primaryButtonUrl}
             >
               {primaryButtonText}

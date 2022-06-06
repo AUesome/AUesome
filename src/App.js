@@ -107,7 +107,12 @@ import ThankYouPage from "ThankYouPage.js";
 
 import Home from "pages/Home.js";
 import About from "pages/AboutUs.js";
+import Testimonials from "pages/Testimonials.js";
 import Blog from "pages/BlogIndex.js";
+import Clubs from "pages/Clubs.js";
+import Privacy from "pages/PrivacyPolicy";
+import Terms from "pages/TermsOfService";
+import Error404 from "pages/404.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -120,7 +125,14 @@ export default function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/about" component={About} exact />
+        <Route path="/clubs" component={Clubs} exact />
+        <Route path="/testimonials" component={Testimonials} exact />
         <Route path="/blog" component={Blog} exact />
+        <Route path="/privacy-policy" component={Privacy} exact />
+        <Route path="/terms-of-service" component={Terms} exact />
+        {/* <Route path="/news" component={News} exact /> */}
+        {/* <Route path="/community" component={Community} exact /> */}
+        <Route path="*" component={Error404} />
       </Switch>
     </Router>
   );

@@ -19,6 +19,7 @@ import feature3 from "images/features/3.png";
 import Blog from "components/blogs/PopularAndRecentBlogPosts";
 import Mission from "components/testimonials/TwoColumnWithImageAndRating";
 import Testimonial from "components/testimonials/ThreeColumnWithProfileImage";
+import Stats from "components/features/ThreeColCenteredStatsPrimaryBackground";
 const testimonials = {
   testimonials1: [
     {
@@ -77,27 +78,14 @@ export default () => {
     <AnimationRevealPage disabled>
       <Hero />
       <MainFeature />
-      <div style={{ paddingTop: "6rem" }}>
-        <Testimonial testimonials={testimonials.testimonials1} />
-      </div>
-      <Testimonial
-        testimonials={testimonials.testimonials2}
-        heading=""
-        subheading=""
-      />
-      <div style={{ paddingBottom: "6rem" }}>
-        <Testimonial
-          testimonials={testimonials.testimonials3}
-          heading=""
-          subheading=""
-        />
-      </div>
+      {/* <Stats /> */}
       <MainFeature1
         subheading={<Subheading>Therapy Kit</Subheading>}
         heading="Custom at-home therapy kits"
         description="Customizable at-home therapy kits that help children with special needs improve communication, sensory, and motor skills with various activities. To help us fund our kits, be sure to support us on GoFundMe! Order an AUesome kit by signing up below."
         buttonRounded={false}
         primaryButtonText="Sign Up!"
+        primaryButtonUrl="/signup"
         imageSrc={feature1}
       />
       <MainFeature1
@@ -107,6 +95,7 @@ export default () => {
         buttonRounded={false}
         primaryButtonText="Dashboard"
         imageSrc={feature2}
+        primaryButtonUrl="https://dashboard.auesome.co"
         textOnLeft={false}
       />
       <MainFeature1
@@ -115,9 +104,9 @@ export default () => {
         description="Coming soon! Our app includes a preliminary diagnosis and survey, games that provide cognitive training for your child, and instructional videos to help guide you while you work on activities in the kit. Support our app's development on our GoFundMe page!"
         buttonRounded={false}
         primaryButtonText="GoFundMe"
+        primaryButtonUrl="https://www.gofundme.com/f/auesome-athome-therapy-for-children-with-autism"
         imageSrc={feature3}
       />
-      <Mission />
       <Blog />
       <Footer />
     </AnimationRevealPage>

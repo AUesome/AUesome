@@ -11,14 +11,25 @@ import { ReactComponent as ArrowRightIcon } from "images/arrow-right-icon.svg";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
+const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto items-center`;
+const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
+const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 relative`;
+const TextColumn = styled(Column)((props) => [
+  tw`xl:w-7/12 mt-16 md:mt-0`,
+  props.textOnLeft
+    ? tw`md:mr-12 lg:mr-16 md:order-first`
+    : tw`md:ml-12 lg:ml-16 md:order-last`,
+]);
 
 const ThreeColumn = tw.div`flex flex-wrap`;
-const Column = tw.div`xl:mr-12 xl:last:mr-0`;
-const HeadingColumn = styled(Column)(props => [
+// const Column = tw.div`xl:mr-12 xl:last:mr-0`;
+const HeadingColumn = styled(Column)((props) => [
   tw`w-full xl:w-5/12`,
-  props.textOnLeft ? tw`xl:order-first` : tw`xl:order-last xl:ml-12 xl:mr-0`
+  props.textOnLeft ? tw`xl:order-first` : tw`xl:order-last xl:ml-12 xl:mr-0`,
 ]);
-const CardColumn = tw(Column)`w-full md:w-1/2 xl:w-3/12 mt-16 xl:mt-0 xl:last:ml-auto`;
+const CardColumn = tw(
+  Column
+)`w-full md:w-1/2 xl:w-3/12 mt-16 xl:mt-0 xl:last:ml-auto`;
 
 const HeadingInfoContainer = tw.div`text-center xl:text-left max-w-lg xl:max-w-none mx-auto xl:mx-0`;
 const HeadingTitle = tw(SectionHeading)`mt-4 xl:text-left leading-tight`;
@@ -31,9 +42,9 @@ const PrimaryLink = styled(PrimaryLinkBase)`
 `;
 
 const Card = tw.div`mx-auto xl:mx-0 xl:ml-auto max-w-sm md:max-w-xs lg:max-w-sm xl:max-w-xs`;
-const CardImage = styled.div(props => [
+const CardImage = styled.div((props) => [
   `background-image: url("${props.imageSrc}");`,
-  tw`h-80 bg-cover bg-center rounded`
+  tw`h-80 bg-cover bg-center rounded`,
 ]);
 
 const CardText = tw.div`mt-4`;
@@ -54,39 +65,42 @@ const CardMetaFeature = styled.div`
     ${tw`w-5 h-5 mr-1`}
   }
 `;
-const CardAction = tw(PrimaryButtonBase)`w-full mt-6`;
+const CardAction = tw.button`px-8 py-3 font-bold rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 w-full mt-6`;
 
 export default ({
-  subheading = "Our Portfolio",
+  subheading = "Collaboration",
   headingHtmlComponent = (
     <>
-      We've done some <span tw="text-primary-500">amazing projects.</span>
+      Neurodiversity <span tw="text-primary-500">advocacy</span> & outreach
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.",
-  linkText = "View all Projects",
-  cardLinkText = "Read Case Study",
-  textOnLeft = false
+  description = "AUesome strives to make personalized, interactive resources and therapy for individuals with special needs accessible to all. If you're apart of an organization interested in receiving kits, download our prospectus for more information and contact us for bulk supplies, or fill out our kit form on the signup page. Alternatively, if you're a student interested in being a leader that wants to make change in your community, be sure to check out our clubs initiative!",
+  linkText = "AUesome Clubs",
+  textOnLeft = false,
 }) => {
   const cards = [
     {
       imageSrc:
         "https://images.unsplash.com/photo-1563461660947-507ef49e9c47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      company: "Tesla Inc.",
-      type: "Ad Campaign",
-      title: "Personalized Ad Campaign using Google AdWords",
-      durationText: "90 Days Campaign",
-      locationText: "New York"
+      company: "AUesome Clubs",
+      type: "Students",
+      title: "Leading and promoting neurodiversity awareness",
+      durationText: "Self-paced",
+      locationText: "Local community",
+      cardLinkText: "Learn More",
+      url: "/clubs",
     },
     {
       imageSrc:
         "https://images.unsplash.com/photo-1573165231977-3f0e27806045?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      company: "Nestle",
-      type: "SEO Marketing",
-      title: "Ranking #1 for keywords like Chocolate, Snack",
-      durationText: "180 Day Campaign",
-      locationText: "Palo Alto"
-    }
+      company: "Organizations",
+      type: "Collaboration",
+      title: "Providing resources to help others at a greater scale",
+      durationText: "Helping others",
+      locationText: "Global Impact",
+      cardLinkText: "Download Prospectus",
+      url: "/prospectus",
+    },
   ];
   return (
     <Container>
@@ -112,15 +126,23 @@ export default ({
                     <CardType>{card.type}</CardType>
                   </CardHeader>
                   <CardTitle>{card.title}</CardTitle>
-                  <CardMeta>
+                  {/* <CardMeta>
                     <CardMetaFeature>
                       <TimeIcon /> {card.durationText}
                     </CardMetaFeature>
                     <CardMetaFeature>
                       <LocationIcon /> {card.locationText}
                     </CardMetaFeature>
-                  </CardMeta>
-                  <CardAction>{cardLinkText}</CardAction>
+                  </CardMeta> */}
+                  <CardAction
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.location.href = card.url;
+                    }}
+                  >
+                    {card.cardLinkText}
+                  </CardAction>
                 </CardText>
               </Card>
             </CardColumn>

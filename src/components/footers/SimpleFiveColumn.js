@@ -4,9 +4,10 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 import LogoImage from "../../images/mini-auesome-logo.png";
-import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
-import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
+import { ReactComponent as InstagramIcon } from "../../images/icons/instagram.svg";
+import { ReactComponent as LinkedinIcon } from "../../images/icons/linkedin.svg";
+import { ReactComponent as FacebookIcon } from "../../images/icons/facebook.svg";
+import { ReactComponent as GithubIcon } from "../../images/icons/github.svg";
 
 const Container = tw.div`relative bg-gray-200 -mx-8 -mb-8 px-8`;
 const FiveColumns = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20 flex flex-wrap justify-between`;
@@ -52,65 +53,84 @@ export default () => {
             Site developed by Anshul Gupta
           </CompanyDescription>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink href="https://instagram.com/auesome.co" target="_blank">
+              <InstagramIcon />
+            </SocialLink>
+            <SocialLink
+              href="https://www.facebook.com/groups/auesomefamily"
+              target="_blank"
+            >
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <TwitterIcon />
+            <SocialLink
+              href="https://linkedin.com/company/auesome"
+              target="_blank"
+            >
+              <LinkedinIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
+            <SocialLink href="https://github.com/auesome" target="_blank">
+              <GithubIcon />
             </SocialLink>
           </SocialLinksContainer>
         </WideColumn>
         <Column>
-          <ColumnHeading>Quick Links</ColumnHeading>
+          <ColumnHeading>Site Navigation</ColumnHeading>
           <LinkList>
             <LinkListItem>
-              <Link href="#">Blog</Link>
+              <Link href="/">Home</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">FAQs</Link>
+              <Link href="/about">About</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Support</Link>
+              <Link href="/testimonials">Testimonial</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">About Us</Link>
+              <Link href="/blog">Blog</Link>
             </LinkListItem>
           </LinkList>
         </Column>
         <Column>
-          <ColumnHeading>Product</ColumnHeading>
+          <ColumnHeading>Information</ColumnHeading>
           <LinkList>
             <LinkListItem>
-              <Link href="#">Log In</Link>
+              <Link href="/signup">Kit Signup</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Personal</Link>
+              <Link href="https://dashboard.auesome.co">Dashboard</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Business</Link>
+              <Link href="/terms-of-service">Terms of Service</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Team</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
             </LinkListItem>
           </LinkList>
         </Column>
         <Column>
-          <ColumnHeading>Legal</ColumnHeading>
+          <ColumnHeading>Join our Team</ColumnHeading>
           <LinkList>
             <LinkListItem>
-              <Link href="#">GDPR</Link>
+              <Link href="/clubs">Club Lead</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Privacy Policy</Link>
+              <Link
+                href="https://www.notion.so/AUesome-Recruitment-ca2a672b14914cabb6ad2d8a8c0e664e"
+                target="_blank"
+              >
+                Team Member
+              </Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Terms of Service</Link>
+              <Link href="#">Organization Partner</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Disclaimer</Link>
+              <Link
+                href="https://www.notion.so/AUesome-Recruitment-ca2a672b14914cabb6ad2d8a8c0e664e"
+                target="_blank"
+              >
+                Volunteer
+              </Link>
             </LinkListItem>
           </LinkList>
         </Column>

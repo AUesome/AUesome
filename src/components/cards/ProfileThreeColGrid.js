@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
-import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
+import { Container, ContentWithPaddingNone } from "components/misc/Layouts.js";
 import {
   SectionHeading,
   Subheading as SubheadingBase,
@@ -21,7 +21,7 @@ const Subheading = tw(SubheadingBase)`text-center mb-3`;
 const Description = tw(SectionDescription)`mx-auto text-center`;
 
 const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto`;
-const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`;
+const Card = tw.div`mx-0 mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center px-3`;
 const CardImage = styled.div`
   ${(props) =>
     css`
@@ -119,7 +119,7 @@ export default ({
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
+        "https://media.wired.com/photos/5ed67e71b818b223fd84195f/1:1/w_1600,h_1600,c_limit/Blackout-hashtag-activism.jpg",
       position: "VP of Global Strategy",
       name: "Lauren Pearson",
       links: [
@@ -139,7 +139,7 @@ export default ({
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+        "https://media.wired.com/photos/5ed67e71b818b223fd84195f/1:1/w_1600,h_1600,c_limit/Blackout-hashtag-activism.jpg",
       position: "Editor in Chief",
       name: "Saisri Tangirala",
       links: [
@@ -159,7 +159,7 @@ export default ({
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+        "https://media.wired.com/photos/5ed67e71b818b223fd84195f/1:1/w_1600,h_1600,c_limit/Blackout-hashtag-activism.jpg",
       position: "Design Director",
       name: "Anne Buchko",
       links: [
@@ -181,7 +181,7 @@ export default ({
 }) => {
   return (
     <Container>
-      <ContentWithPaddingXl>
+      <ContentWithPaddingNone>
         <HeadingContainer>
           {subheading && <Subheading>{subheading}</Subheading>}
           {heading && <Heading>{heading}</Heading>}
@@ -210,7 +210,7 @@ export default ({
             </Card>
           ))}
         </Cards>
-      </ContentWithPaddingXl>
+      </ContentWithPaddingNone>
     </Container>
   );
 };
