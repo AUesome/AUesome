@@ -264,6 +264,10 @@ export default ({
       <ContentWithPaddingXl>
         <HeaderRow>
           <Header>{heading}</Header>
+          <PrimaryButtonBase as="a" href="/signup">
+            Sign Up for a Kit Here!
+          </PrimaryButtonBase>
+
           {/* <TabsControl>
             {Object.keys(tabs).map((tabName, index) => (
               <TabControl

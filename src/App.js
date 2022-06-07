@@ -131,6 +131,7 @@ export default function App() {
         <Route path="/blog" component={Blog} exact />
         <Route path="/catalog" component={Catalog} exact />
         <Route path="/signup" component={Signup} exact />
+        <Route path="/testimonials" component={Testimonials} exact />
         <Route path="/privacy-policy" component={Privacy} exact />
         <Route path="/terms-of-service" component={Terms} exact />
         {/* <Route path="/news" component={News} exact /> */}
