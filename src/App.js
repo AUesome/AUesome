@@ -113,6 +113,8 @@ import Clubs from "pages/Clubs.js";
 import Privacy from "pages/PrivacyPolicy";
 import Terms from "pages/TermsOfService";
 import Error404 from "pages/404.js";
+import Catalog from "pages/Catalog";
+import Signup from "pages/Signup";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -126,8 +128,9 @@ export default function App() {
         <Route path="/" component={Home} exact />
         <Route path="/about" component={About} exact />
         <Route path="/clubs" component={Clubs} exact />
-        <Route path="/testimonials" component={Testimonials} exact />
         <Route path="/blog" component={Blog} exact />
+        <Route path="/catalog" component={Catalog} exact />
+        <Route path="/signup" component={Signup} exact />
         <Route path="/privacy-policy" component={Privacy} exact />
         <Route path="/terms-of-service" component={Terms} exact />
         {/* <Route path="/news" component={News} exact /> */}

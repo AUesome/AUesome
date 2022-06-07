@@ -47,8 +47,8 @@ export default () => {
             <LogoText>AUesome</LogoText>
           </LogoContainer>
           <CompanyDescription>
-            Bridging the digital and physical world of at-home therapy, one kit
-            at a time. <br />
+            © AUesome LLC <br />
+            info@auesome.co
             <br />
             Site developed by Anshul Gupta
           </CompanyDescription>
@@ -83,7 +83,7 @@ export default () => {
               <Link href="/about">About</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="/testimonials">Testimonial</Link>
+              <Link href="/testimonials">Testimonials</Link>
             </LinkListItem>
             <LinkListItem>
               <Link href="/blog">Blog</Link>

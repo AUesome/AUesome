@@ -13,7 +13,7 @@ import Kid1 from "images/kid1.jpeg";
 import Kid2 from "images/kid2.jpeg";
 import Kid3 from "images/kid3.jpeg";
 import Kid4 from "images/kid4.jpeg";
-import Kid5 from "images/kid5.jpeg";
+// import Kid5 from "images/kid5.jpeg";
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;
 const TabsControl = tw.div`flex flex-wrap bg-gray-200 px-2 py-2 rounded leading-none mt-12 xl:mt-0`;
