@@ -81,8 +81,9 @@ export default ({
   heading = "AUesome's Journey",
   description = {
     des1: "AUesome is a student-driven social enterprise founded in 2020 with the mission of bridging the digital and physical world of at-home therapy for neurodiverse children on the autism spectrum.",
-    des2: "Drawn from our personal experiences in the neurodiverse community, receiving therapy, and through collaborating with therapists, professors, doctors, and parents, we consolidate and design clinically proven therapy tools and activities into a therapy kit, paired with an online instructional platform, dashboard.auesome.co, to provide continuous at-home therapy and parent-implemented interventions.",
+    des2: "Through collaborating with therapists, professors, doctors, and parents, we consolidate and design clinically proven therapy tools and activities into a therapy kit, paired with an online instructional platform, dashboard.auesome.co, to provide continuous at-home therapy and parent-implemented interventions.",
     des3: "We provide our kits to schools, nonprofits, center-based treatment facilities, hospitals, parents, and clinics.",
+    des4: "Contact us at info@auesome.co",
   },
   testimonials = null,
   textOnLeft = false,
@@ -208,5 +209,6 @@ const HeadingInfo = ({ subheading, heading, description, ...props }) => (
     <Description>{description.des1}</Description>
     <Description>{description.des2}</Description>
     <Description>{description.des3}</Description>
+    <Description>{description.des4}</Description>
   </div>
 );

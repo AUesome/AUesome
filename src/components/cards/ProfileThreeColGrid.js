@@ -15,6 +15,9 @@ import { ReactComponent as WebsiteIcon } from "images/github-icon.svg";
 import Anshul from "images/profiles/anshul.png";
 import Isabella from "images/profiles/isabella.jpeg";
 import Andrew from "images/profiles/andrew.png";
+import Saisri from "images/profiles/saisri.png";
+import Lauren from "images/profiles/lauren.png";
+
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)``;
 const Subheading = tw(SubheadingBase)`text-center mb-3`;
@@ -118,8 +121,7 @@ export default ({
       ],
     },
     {
-      imageSrc:
-        "https://media.wired.com/photos/5ed67e71b818b223fd84195f/1:1/w_1600,h_1600,c_limit/Blackout-hashtag-activism.jpg",
+      imageSrc: Lauren,
       position: "VP of Global Strategy",
       name: "Lauren Pearson",
       links: [
@@ -138,8 +140,7 @@ export default ({
       ],
     },
     {
-      imageSrc:
-        "https://media.wired.com/photos/5ed67e71b818b223fd84195f/1:1/w_1600,h_1600,c_limit/Blackout-hashtag-activism.jpg",
+      imageSrc: Saisri,
       position: "Editor in Chief",
       name: "Saisri Tangirala",
       links: [

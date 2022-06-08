@@ -12,7 +12,7 @@ import SeveralKits from "images/kits.jpeg";
 import Executives from "images/Exec.png";
 
 const Container = tw.div`relative`;
-const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
+const Content = tw.div`max-w-screen-xl mx-auto pt-20 lg:pt-24 pb-12 lg:pb-16`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 relative`;
@@ -34,7 +34,9 @@ const CardColumn = tw(
 )`w-full md:w-1/2 xl:w-3/12 mt-16 xl:mt-0 xl:last:ml-auto`;
 
 const HeadingInfoContainer = tw.div`text-center xl:text-left max-w-lg xl:max-w-none mx-auto xl:mx-0`;
-const HeadingTitle = tw(SectionHeading)`mt-4 xl:text-left leading-tight`;
+const HeadingTitle = tw(
+  SectionHeading
+)`mt-4 font-black text-left text-2xl sm:text-3xl lg:text-3xl text-center md:text-left leading-tight`;
 const HeadingDescription = tw.p`text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100 mt-8`;
 const PrimaryLink = styled(PrimaryLinkBase)`
   ${tw`inline-flex justify-center xl:justify-start items-center mt-8 text-lg`}

@@ -62,8 +62,8 @@ const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-p
 export default ({
   heading = "Bridging the digital and physical world of at-home therapy, one kit at a time",
   description = "AUesome's mission is to make therapy more accessible and affordable for neurodiverse children on the autism spectrum.",
-  primaryButtonText = "About Us",
-  primaryButtonUrl = "/about",
+  primaryButtonText = "Sign Up",
+  primaryButtonUrl = "/signup",
   secondaryButtonText = "Read our blog",
   secondaryButtonUrl = "/blog",
   // watchVideoButtonText = "Read our Blog",
@@ -82,7 +82,11 @@ export default ({
       <Container>
         <TwoColumn>
           <LeftColumn>
-            <Heading>{heading}</Heading>
+            <Heading>
+              Bridging the <span tw="text-primary-500">digital</span> and{" "}
+              <span tw="text-primary-500">physical</span> world of at-home
+              therapy, one kit at a time
+            </Heading>
             <Paragraph>{description}</Paragraph>
             <Actions>
               <PrimaryButton as="a" href={primaryButtonUrl}>

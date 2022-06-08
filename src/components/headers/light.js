@@ -86,7 +86,7 @@ export default ({
       <NavLink href="/testimonials">Testimonials</NavLink>
       <NavLink href="/blog">Blog</NavLink>
       <NavLink href="/catalog">Catalog</NavLink>
-      {/* <NavLink href="/blog">News</NavLink>
+      {/* <NavLink href="/news">News</NavLink>
       <NavLink href="/community">Community</NavLink> */}
       <NavLink href="https://dashboard.auesome.co" tw="lg:ml-10!">
         Dashboard

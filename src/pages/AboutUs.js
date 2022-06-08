@@ -17,7 +17,6 @@ import Mission from "components/features/DashedBorderSixFeatures";
 import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import CustomerLoveIconImage from "images/simple-icon.svg";
-import Advocacy from "components/cards/PortfolioTwoCardsWithImage";
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 
 export default () => {
@@ -26,8 +25,7 @@ export default () => {
       <Header />
       <About />
       <Mission />
-      <Advocacy />
-      <div style={{ paddingTop: "3rem" }}>
+      {/* <div style={{ paddingTop: "3rem" }}>
         <TeamCardGrid
           heading="Board of Advisors"
           subheading=""
@@ -51,8 +49,8 @@ export default () => {
             },
           ]}
         />
-      </div>
-      <div style={{ paddingTop: "4rem" }}>
+      </div> */}
+      <div style={{ paddingTop: "4rem", paddingBottom: "6rem" }}>
         <TeamCardGrid />
       </div>
       <Footer />

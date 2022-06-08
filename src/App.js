@@ -114,7 +114,7 @@ import Privacy from "pages/PrivacyPolicy";
 import Terms from "pages/TermsOfService";
 import Error404 from "pages/404.js";
 import Catalog from "pages/Catalog";
-import Signup from "pages/Signup";
+import Signup from "pages/KitSignUp";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
