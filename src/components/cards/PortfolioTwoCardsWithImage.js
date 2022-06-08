@@ -78,7 +78,7 @@ export default ({
       Neurodiversity <span tw="text-primary-500">advocacy</span> & outreach
     </>
   ),
-  description = "AUesome's mission is to make personalized, interactive resources and therapy for individuals with special needs accessible to all. If you're apart of an organization interested in receiving kits, request a bulk order of materials on our signup page. Alternatively, if you're a student interested in being a leader that wants to make change in your community, be sure to check out our clubs initiative!",
+  description = "AUesome's mission is to make personalized, interactive resources and therapy for individuals with special needs accessible to all. If you're a part of an organization interested in receiving kits, request a bulk order of materials on our signup page. Alternatively, if you're a student interested in being a leader that wants to make change in your community, be sure to check out our clubs initiative!",
   linkText = "AUesome Clubs",
   textOnLeft = false,
 }) => {
