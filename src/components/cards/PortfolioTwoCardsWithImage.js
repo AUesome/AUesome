@@ -8,6 +8,8 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as LocationIcon } from "feather-icons/dist/icons/map-pin.svg";
 import { ReactComponent as TimeIcon } from "feather-icons/dist/icons/clock.svg";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-icon.svg";
+import SeveralKits from "images/kits.jpeg";
+import Executives from "images/Exec.png";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -74,14 +76,13 @@ export default ({
       Neurodiversity <span tw="text-primary-500">advocacy</span> & outreach
     </>
   ),
-  description = "AUesome strives to make personalized, interactive resources and therapy for individuals with special needs accessible to all. If you're apart of an organization interested in receiving kits, download our prospectus for more information and contact us for bulk supplies, or fill out our kit form on the signup page. Alternatively, if you're a student interested in being a leader that wants to make change in your community, be sure to check out our clubs initiative!",
+  description = "AUesome's mission is to make personalized, interactive resources and therapy for individuals with special needs accessible to all. If you're apart of an organization interested in receiving kits, request a bulk order of materials on our signup page. Alternatively, if you're a student interested in being a leader that wants to make change in your community, be sure to check out our clubs initiative!",
   linkText = "AUesome Clubs",
   textOnLeft = false,
 }) => {
   const cards = [
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1563461660947-507ef49e9c47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
+      imageSrc: Executives,
       company: "AUesome Clubs",
       type: "Students",
       title: "Leading and promoting neurodiversity awareness",
@@ -91,15 +92,14 @@ export default ({
       url: "/clubs",
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1573165231977-3f0e27806045?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
+      imageSrc: SeveralKits,
       company: "Organizations",
       type: "Collaboration",
       title: "Providing resources to help others at a greater scale",
       durationText: "Helping others",
       locationText: "Global Impact",
-      cardLinkText: "Download Prospectus",
-      url: "/prospectus",
+      cardLinkText: "Sign Up",
+      url: "/signup",
     },
   ];
   return (
