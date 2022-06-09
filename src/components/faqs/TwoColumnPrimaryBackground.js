@@ -3,11 +3,16 @@ import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled, { css } from "styled-components/macro"; //eslint-disable-line
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
+import {
+  SectionHeading,
+  Subheading as SubheadingBase,
+} from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chevron-down.svg";
 
-const PrimaryBackgroundContainer = tw(Container)`-mx-8 px-8 bg-primary-900 text-gray-100`;
+const PrimaryBackgroundContainer = tw(
+  Container
+)`-mx-8 px-8 bg-primary-900 text-gray-100`;
 
 const HeadingContainer = tw.div``;
 const Subheading = tw(SubheadingBase)`text-center text-gray-100 mb-4`;
@@ -30,45 +35,45 @@ const Answer = tw(motion.div)`hidden text-sm font-normal mt-4 text-gray-300`;
 export default ({
   subheading = "",
   heading = "Frequently Asked Questions",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  description = "If you have any other questions or concerns, please contact info@auesome.co for more details ",
   faqs = [
     {
       question: "Is lunch provided free of cost ?",
       answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system.",
     },
     {
       question: "Do you have 2 Bedroom suites ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
       question: "Are Wi-Fi costs included in the price ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
       question: "Where can I reach you for support ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
       question: "What kind of SLA Guarantee do you provide ? ",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
       question: "Where are the servers located ?",
       answer:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    }
-  ]
+    },
+  ],
 }) => {
   const faqCol1 = [];
   const faqCol2 = [];
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
 
-  const toggleQuestion = questionIndex => {
+  const toggleQuestion = (questionIndex) => {
     if (activeQuestionIndex === questionIndex) setActiveQuestionIndex(null);
     else setActiveQuestionIndex(questionIndex);
   };
@@ -81,7 +86,7 @@ export default ({
           <QuestionToggleIcon
             variants={{
               collapsed: { rotate: 0 },
-              open: { rotate: -180 }
+              open: { rotate: -180 },
             }}
             initial="collapsed"
             animate={activeQuestionIndex === index ? "open" : "collapsed"}
@@ -92,8 +97,18 @@ export default ({
         </Question>
         <Answer
           variants={{
-            open: { opacity: 1, height: "auto", marginTop: "16px", display: "block" },
-            collapsed: { opacity: 0, height: 0, marginTop: "0px", display: "none" }
+            open: {
+              opacity: 1,
+              height: "auto",
+              marginTop: "16px",
+              display: "block",
+            },
+            collapsed: {
+              opacity: 0,
+              height: 0,
+              marginTop: "0px",
+              display: "none",
+            },
           }}
           initial="collapsed"
           animate={activeQuestionIndex === index ? "open" : "collapsed"}

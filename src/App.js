@@ -127,7 +127,7 @@ export default function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/about" component={About} exact />
-        <Route path="/clubs" component={Clubs} exact />
+        <Route path="/chapters" component={Clubs} exact />
         <Route path="/blog" component={Blog} exact />
         <Route path="/catalog" component={Catalog} exact />
         <Route path="/signup" component={Signup} exact />

@@ -111,7 +111,7 @@ export default () => {
           <ColumnHeading>Join our Team</ColumnHeading>
           <LinkList>
             <LinkListItem>
-              <Link href="/clubs">Club Lead</Link>
+              <Link href="/chapters">Chapter Lead</Link>
             </LinkListItem>
             <LinkListItem>
               <Link

@@ -50,93 +50,111 @@ const Description = tw.div``;
 const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
 
-export default ({
-  headingText = "Blog Posts",
-  posts = [
-    {
-      imageSrc: Exercise,
-      date: "May 2022",
-      author: "Saisri Tangirala",
-      editor: "Anshul Gupta",
-      title: "The Benefits of Exercise for Children with Autism",
-      description:
-        "Engaging in physical activity such as sports has shown to be beneficial in many aspects, especially for children on the autism spectrum. Physical activity may assist develop a variety of abilities and contribute to better overall health.",
-      url: "/the-benefits-of-exercise-for-children-with-autism/",
-      featured: true,
-    },
-    {
-      imageSrc: Exercise,
-      date: "May 2022",
-      author: "Saisri Tangirala",
-      editor: "Anshul Gupta",
-      title: "The Benefits of Exercise for Children with Autism",
-      description:
-        "Engaging in physical activity such as sports has shown to be beneficial in many aspects, especially for children on the autism spectrum. Physical activity may assist develop a variety of abilities and contribute to better overall health.",
-      url: "/the-benefits-of-exercise-for-children-with-autism/",
-      featured: true,
-    },
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-  ],
-}) => {
-  const [visible, setVisible] = useState(7);
-  const onLoadMoreClick = () => {
-    setVisible((v) => v + 6);
-  };
-  return (
-    <AnimationRevealPage disabled>
-      <Header />
-      <Container>
-        <ContentWithPaddingXl>
-          <HeadingRow>
-            <Heading>{headingText}</Heading>
-          </HeadingRow>
-          <Posts>
-            {posts.slice(0, visible).map((post, index) => (
-              <PostContainer key={index} featured={post.featured}>
-                <Post className="group" as="a" href={post.url}>
-                  <Image imageSrc={post.imageSrc} />
-                  <Info>
-                    <Category>{post.date}</Category>
-                    <CreationDate>{post.author}</CreationDate>
-                    <Title>{post.title}</Title>
-                    {post.featured && post.description && (
-                      <Description>{post.description}</Description>
-                    )}
-                  </Info>
-                </Post>
-              </PostContainer>
-            ))}
-          </Posts>
-          {visible < posts.length && (
-            <ButtonContainer>
-              <LoadMoreButton onClick={onLoadMoreClick}>
-                Load More
-              </LoadMoreButton>
-            </ButtonContainer>
-          )}
-        </ContentWithPaddingXl>
-      </Container>
-      <Footer />
-    </AnimationRevealPage>
-  );
-};
+export default class Test extends React.Component {
+  componentDidMount() {
+    document.getElementById("button").click();
+  }
+
+  render() {
+    return (
+      <div>
+        <a href="http://www.stackoverflow.com/">
+          <button id="button" onClick={this.checkClick}>
+            loading...
+          </button>
+        </a>
+      </div>
+    );
+  }
+}
+
+// export default ({
+//   headingText = "Blog Posts",
+//   posts = [
+//     {
+//       imageSrc: Exercise,
+//       date: "May 2022",
+//       author: "Saisri Tangirala",
+//       editor: "Anshul Gupta",
+//       title: "The Benefits of Exercise for Children with Autism",
+//       description:
+//         "Engaging in physical activity such as sports has shown to be beneficial in many aspects, especially for children on the autism spectrum. Physical activity may assist develop a variety of abilities and contribute to better overall health.",
+//       url: "/the-benefits-of-exercise-for-children-with-autism/",
+//       featured: true,
+//     },
+//     {
+//       imageSrc: Exercise,
+//       date: "May 2022",
+//       author: "Saisri Tangirala",
+//       editor: "Anshul Gupta",
+//       title: "The Benefits of Exercise for Children with Autism",
+//       description:
+//         "Engaging in physical activity such as sports has shown to be beneficial in many aspects, especially for children on the autism spectrum. Physical activity may assist develop a variety of abilities and contribute to better overall health.",
+//       url: "/the-benefits-of-exercise-for-children-with-autism/",
+//       featured: true,
+//     },
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//     getPlaceholderPost(),
+//   ],
+// }) => {
+//   const [visible, setVisible] = useState(7);
+//   const onLoadMoreClick = () => {
+//     setVisible((v) => v + 6);
+//   };
+//   return (
+//     <AnimationRevealPage disabled>
+//       <Header />
+//       <Container>
+//         <ContentWithPaddingXl>
+//           <HeadingRow>
+//             <Heading>{headingText}</Heading>
+//           </HeadingRow>
+//           <Posts>
+//             {posts.slice(0, visible).map((post, index) => (
+//               <PostContainer key={index} featured={post.featured}>
+//                 <Post className="group" as="a" href={post.url}>
+//                   <Image imageSrc={post.imageSrc} />
+//                   <Info>
+//                     <Category>{post.date}</Category>
+//                     <CreationDate>{post.author}</CreationDate>
+//                     <Title>{post.title}</Title>
+//                     {post.featured && post.description && (
+//                       <Description>{post.description}</Description>
+//                     )}
+//                   </Info>
+//                 </Post>
+//               </PostContainer>
+//             ))}
+//           </Posts>
+//           {visible < posts.length && (
+//             <ButtonContainer>
+//               <LoadMoreButton onClick={onLoadMoreClick}>
+//                 Load More
+//               </LoadMoreButton>
+//             </ButtonContainer>
+//           )}
+//         </ContentWithPaddingXl>
+//       </Container>
+//       <Footer />
+//     </AnimationRevealPage>
+//   );
+// };
 
 const getPlaceholderPost = () => ({
   imageSrc:

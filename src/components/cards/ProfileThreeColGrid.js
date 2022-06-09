@@ -55,7 +55,19 @@ const CardLinks = styled.div`
 export default ({
   heading = "Leadership",
   subheading = "Our Team",
-  description = "AUesome has members across the globe passionate about neurodiversity advocacy.",
+  description = (
+    <>
+      AUesome has members across the globe passionate about neurodiversity
+      advocacy. If you're interested in apply for our leadership team, sign up{" "}
+      <a
+        href="https://www.notion.so/AUesome-Recruitment-ca2a672b14914cabb6ad2d8a8c0e664e"
+        style={{ color: "blue" }}
+      >
+        here
+      </a>
+      !
+    </>
+  ),
   cards = [
     {
       imageSrc: Anshul,

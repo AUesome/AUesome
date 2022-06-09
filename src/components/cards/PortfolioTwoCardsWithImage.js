@@ -78,20 +78,20 @@ export default ({
       Neurodiversity <span tw="text-primary-500">advocacy</span> & outreach
     </>
   ),
-  description = "AUesome's mission is to make personalized, interactive resources and therapy for individuals with special needs accessible to all. If you're a part of an organization interested in receiving kits, request a bulk order of materials on our signup page. Alternatively, if you're a student interested in being a leader that wants to make change in your community, be sure to check out our clubs initiative!",
-  linkText = "AUesome Clubs",
+  description = "AUesome's mission is to make personalized, interactive resources and therapy for individuals with special needs accessible to all. If you're a part of an organization interested in receiving kits, request a bulk order of materials on our signup page. Alternatively, if you're a student interested in being a leader that wants to make change in your community, be sure to check out our chapters initiative!",
+  linkText = "AUesome Chapters",
   textOnLeft = false,
 }) => {
   const cards = [
     {
       imageSrc: Executives,
-      company: "AUesome Clubs",
+      company: "AUesome Chapters",
       type: "Students",
       title: "Leading and promoting neurodiversity awareness",
       durationText: "Self-paced",
       locationText: "Local community",
       cardLinkText: "Learn More",
-      url: "/clubs",
+      url: "/chapters",
     },
     {
       imageSrc: SeveralKits,
@@ -113,7 +113,7 @@ export default ({
               <Subheading>{subheading}</Subheading>
               <HeadingTitle>{headingHtmlComponent}</HeadingTitle>
               <HeadingDescription>{description}</HeadingDescription>
-              <PrimaryLink>
+              <PrimaryLink href="/chapters">
                 {linkText} <ArrowRightIcon />
               </PrimaryLink>
             </HeadingInfoContainer>

@@ -88,8 +88,8 @@ export default () => {
                   <Description>{post.description}</Description>
                   <AuthorInfo>
                     <AuthorNameAndProfession>
-                      <AuthorName>{post.author}</AuthorName>
-                      <AuthorProfile>{post.editor}</AuthorProfile>
+                      <AuthorName>by {post.author}</AuthorName>
+                      <AuthorProfile>edited by {post.editor}</AuthorProfile>
                     </AuthorNameAndProfession>
                   </AuthorInfo>
                 </Post>
@@ -102,7 +102,7 @@ export default () => {
                 <Post key={index} href="/blog" className="group">
                   <PostTextContainer>
                     <Title>{post.title}</Title>
-                    <AuthorName>{post.author}</AuthorName>
+                    <AuthorName>by {post.author}</AuthorName>
                   </PostTextContainer>
                   <Image imageSrc={post.imageSrc} />
                 </Post>
