@@ -8,7 +8,7 @@ export default class Test extends React.Component {
   render() {
     return (
       <div>
-        <a href="https://airtable.com/shrfreauqmSfFPICQ">
+        <a href="https://dashboard.auesome.co">
           <button id="button" onClick={this.checkClick}>
             loading...
           </button>

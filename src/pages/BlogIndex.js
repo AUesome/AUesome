@@ -58,7 +58,7 @@ export default class Test extends React.Component {
   render() {
     return (
       <div>
-        <a href="http://www.stackoverflow.com/">
+        <a href="http://blog.auesome.co">
           <button id="button" onClick={this.checkClick}>
             loading...
           </button>

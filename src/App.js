@@ -116,6 +116,22 @@ import Error404 from "pages/404.js";
 import Catalog from "pages/Catalog";
 import Signup from "pages/KitSignUp";
 
+import app from "redirects/app";
+import dashboard from "redirects/dashboard";
+import design from "redirects/design";
+import donate from "redirects/donate";
+import feedback from "redirects/feedback";
+import join from "redirects/join";
+import kits from "redirects/kits";
+import marketing from "redirects/marketing";
+import parent from "redirects/parent";
+import parentambassador from "redirects/parentambassador";
+import publicrelations from "redirects/publicrelations";
+import recruitment from "redirects/recruitment";
+import tech from "redirects/tech";
+import videos from "redirects/videos";
+import volunteer from "redirects/volunteer";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
@@ -125,6 +141,7 @@ export default function App() {
   return (
     <Router>
       <Switch>
+        {/* main pages */}
         <Route path="/" component={Home} exact />
         <Route path="/about" component={About} exact />
         <Route path="/chapters" component={Clubs} exact />
@@ -132,10 +149,31 @@ export default function App() {
         <Route path="/catalog" component={Catalog} exact />
         <Route path="/signup" component={Signup} exact />
         <Route path="/testimonials" component={Testimonials} exact />
-        <Route path="/privacy-policy" component={Privacy} exact />
-        <Route path="/terms-of-service" component={Terms} exact />
         {/* <Route path="/news" component={News} exact /> */}
         {/* <Route path="/community" component={Community} exact /> */}
+        <Route path="/privacy-policy" component={Privacy} exact />
+        <Route path="/terms-of-service" component={Terms} exact />
+
+        {/* redirects */}
+        <Route path="/app" component={app} exact />
+        <Route path="/dashboard" component={dashboard} exact />
+        <Route path="/design" component={design} exact />
+        <Route path="/donate" component={donate} exact />
+        <Route path="/feedback" component={feedback} exact />
+        <Route path="/join" component={join} exact />
+        <Route path="/kits" component={kits} exact />
+        <Route path="/marketing" component={marketing} exact />
+        <Route path="/parent" component={parent} exact />
+        <Route path="/parentambassador" component={parentambassador} exact />
+        <Route path="/publicrelations" component={publicrelations} exact />
+        <Route path="/recruitment" component={recruitment} exact />
+        <Route path="/tech" component={tech} exact />
+        <Route path="/videos" component={videos} exact />
+        <Route path="/volunteer" component={volunteer} exact />
+        <Route path="/app" component={app} exact />
+        <Route path="/app" component={app} exact />
+
+        {/* default 404 */}
         <Route path="*" component={Error404} />
       </Switch>
     </Router>
