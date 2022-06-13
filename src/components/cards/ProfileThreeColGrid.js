@@ -115,7 +115,7 @@ export default ({
       imageSrc: Andrew,
       position: "Co-Founder & Advisor",
       biography:
-        "Andrew Kim is a sophomore at the USC Jimmy Iovine and Andre Young Academy specializing in the design and customer experience of AUesome. He helps with product design and other artwork at AUesome. He is an aspiring designer interested in the intersection between digital innovation and social entrepreneurship.",
+        "Andrew Kim is a sophomore at the USC Jimmy Iovine and Andre Young Academy specializing in the design and customer experience. He helps with product design and other artwork at AUesome. He is an aspiring designer interested in the intersection between digital innovation and social entrepreneurship.",
       name: "Andrew Kim",
       links: [
         {

@@ -50,8 +50,8 @@ export default () => {
         textOnLeft={false}
       />
       <MainFeature1
-        subheading={<Subheading>Accompanying App</Subheading>}
-        heading="AUesome mobile digital application"
+        subheading={<Subheading>Digital App</Subheading>}
+        heading="AUesome mobile application"
         description="Coming soon! Our app includes a preliminary diagnosis and survey, games that provide cognitive training for your child, and instructional videos to help guide you while you work on activities in the kit. Support our app's development on our GoFundMe page!"
         buttonRounded={false}
         primaryButtonText="GoFundMe"
