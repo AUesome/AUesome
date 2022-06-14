@@ -63,7 +63,7 @@ export default ({
   ),
   description = "Become an AUesome Chapter lead and an leave an impact in the neurodiverse community! Anyone across the globe is eligible to start their own chapter and we highly encourage students interested in neurodiversity, advocacy, or leadership with the dedication to help their local community to sign up. Applications are accepted year-round.",
   primaryButtonText = "Apply Today!",
-  primaryButtonUrl = "https://auesome.co",
+  primaryButtonUrl = "https://docs.google.com/forms/d/e/1FAIpQLSeTuVnWaGl2MJXEgeM2AsB3mSU9oPEVWGXymL4_joRiTr2vhg/viewform?usp=sf_link",
   features = null,
   textOnLeft = true,
 }) => {
