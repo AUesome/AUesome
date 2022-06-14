@@ -54,7 +54,7 @@ export default ({
   ),
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   primaryButtonText = "Learn More",
-  primaryButtonUrl = "https://auesome.co",
+  primaryButtonUrl = "https://docs.google.com/document/d/1ZOZNLkaWau_V_rQx4UPaNxbCUxGBmdHMZGVB54ncUho/edit?usp=sharing",
   imageSrc = feature1,
   buttonRounded = true,
   imageRounded = true,
