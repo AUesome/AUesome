@@ -56,17 +56,17 @@ export default ({
     {
       question: "How large of a time commitment is this?",
       answer:
-        "Starting an AUesome Chapter is not a huge time commitment, with an average of 1hr per week, as it is more of a self-paced or group-paced learning experience. The only official meetings you have to attend are the onboarding session and our annual leadership get-together.",
+        "Starting an AUesome Chapter is not a huge time commitment, averaging around an hour per week. Given that it is more of a self-paced learning experience, commitment can vary based on your time and interests. The only official meetings you have to attend are the onboarding session and our annual leadership get-together.",
     },
     {
       question: "What criteria do I have to fulfill to lead a chapter?",
       answer:
-        "We want to make our resources accessible to as many people as possible, regardless of geographic location or socioeconomic status. We will accept anyone willing dedicate the time and energy to leading their club across the globe. We only ask that you be proficient in English.",
+        "We want to make our resources accessible to as many people as possible, regardless of personal background. We will accept anyone willing dedicate the time and energy to leading their club across the globe. We only ask that you be proficient in English.",
     },
     {
       question: "Do I have to know a lot about neurodiversity before starting?",
       answer:
-        "No! If you're not as familiar with neurodiversity but are willing to learn, being an AUesome Chapter lead would be greatly beneficial for you.",
+        "No! If you're not as familiar with neurodiversity but are willing to learn, being an AUesome Chapter lead would be a great opportunity for you.",
     },
   ],
 }) => {
