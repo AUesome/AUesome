@@ -94,11 +94,11 @@ export default ({
           <Content>
             <Heading>{heading}</Heading>
             <Paragraph>
-              Exclusive to this summer, we'll be providing free AUesome Kits for
-              those with special needs. Sign up below if you're interested! If
-              you're an organization wanting multiple kits, make sure to sign up
-              on the organization form and not the regular form. Note that these
-              kits are funded through our{" "}
+              Exclusive for this summer, we'll be providing free AUesome Kits
+              for those with special needs. Sign up below if you're interested!
+              If you're an organization wanting multiple kits, make sure to sign
+              up on the organization form and not the regular form. Note that
+              these kits are funded through our{" "}
               <a
                 target="_blank"
                 href="https://www.gofundme.com/f/auesome-athome-therapy-for-children-with-autism"

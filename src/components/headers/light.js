@@ -84,7 +84,7 @@ export default ({
       <NavLink href="/about">About</NavLink>
       <NavLink href="/chapters">Chapters</NavLink>
       <NavLink href="/testimonials">Testimonials</NavLink>
-      <NavLink href="/blog">Blog</NavLink>
+      {/* <NavLink href="/blog">Blog</NavLink> */}
       <NavLink href="/catalog">Catalog</NavLink>
       {/* <NavLink href="/news">News</NavLink> */}
       {/* <NavLink href="/advocacy">Advocacy</NavLink> */}
