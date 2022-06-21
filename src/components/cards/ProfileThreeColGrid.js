@@ -17,7 +17,6 @@ import Isabella from "images/profiles/isabella.jpeg";
 import Andrew from "images/profiles/andrew.png";
 import Saisri from "images/profiles/saisri.png";
 import Lauren from "images/profiles/lauren.png";
-import Anne from "images/profiles/anne.png";
 
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)``;
@@ -59,7 +58,7 @@ export default ({
   description = (
     <>
       AUesome has members across the globe passionate about neurodiversity
-      advocacy. If you're interested in applying for our team, sign up{" "}
+      advocacy. If you're interested in joining our leadership team, sign up{" "}
       <a
         href="https://www.notion.so/AUesome-Recruitment-ca2a672b14914cabb6ad2d8a8c0e664e"
         style={{ color: "blue" }}
@@ -116,7 +115,7 @@ export default ({
       imageSrc: Andrew,
       position: "Co-Founder & Advisor",
       biography:
-        "Andrew Kim is a sophomore at the USC Jimmy Iovine and Andre Young Academy specializing in the design and customer experience of AUesome. He helps with product design and other artwork at AUesome. He is an aspiring designer interested in the intersection between digital innovation and social entrepreneurship.",
+        "Andrew Kim is a sophomore at the USC Jimmy Iovine and Andre Young Academy specializing in the design and customer experience. He helps with product design and other artwork at AUesome. He is an aspiring designer interested in the intersection between digital innovation and social entrepreneurship.",
       name: "Andrew Kim",
       links: [
         {
@@ -172,7 +171,8 @@ export default ({
       ],
     },
     {
-      imageSrc: Anne,
+      imageSrc:
+        "https://media.wired.com/photos/5ed67e71b818b223fd84195f/1:1/w_1600,h_1600,c_limit/Blackout-hashtag-activism.jpg",
       position: "Design Director",
       name: "Anne Buchko",
       links: [

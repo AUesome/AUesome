@@ -17,7 +17,6 @@ import Mission from "components/features/DashedBorderSixFeatures";
 import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import CustomerLoveIconImage from "images/simple-icon.svg";
-import { important } from "tailwind.config";
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 
 export default () => {

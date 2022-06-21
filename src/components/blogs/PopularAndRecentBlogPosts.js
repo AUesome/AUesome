@@ -61,7 +61,14 @@ export default () => {
   //Recommended: Only 2 Items
   const popularPosts = popular;
 
-  const recentPosts = [posts[0], posts[1], posts[2]];
+  const recentPosts = [
+    posts[0],
+    posts[1],
+    posts[2],
+    posts[3],
+    posts[4],
+    posts[7],
+  ];
 
   return (
     <Container>

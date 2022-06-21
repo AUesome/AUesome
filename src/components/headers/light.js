@@ -23,7 +23,7 @@ export const NavLinks = tw.div`inline-block`;
  * hocus:bg-primary-700 will apply the bg-primary-700 class on hover or focus
  */
 export const NavLink = tw.a`
-  text-lg my-2 lg:text-sm xl:mx-5 lg:my-0 lg:mx-3 lg:mx-3
+  text-lg my-2 lg:text-sm xl:mx-6 lg:my-0 lg:mx-3
   font-semibold tracking-wide transition duration-300
   pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
 `;
@@ -36,7 +36,7 @@ export const PrimaryLink = tw(NavLink)`
 `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center font-black border-b-0 text-xl! ml-0!`};
+  ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
 
   img {
     ${tw`w-10 mr-3`}
@@ -84,12 +84,10 @@ export default ({
       <NavLink href="/about">About</NavLink>
       <NavLink href="/chapters">Chapters</NavLink>
       <NavLink href="/testimonials">Testimonials</NavLink>
-      {/* <NavLink href="/blog">Blog</NavLink> */}
+      <NavLink href="/blog">Blog</NavLink>
       <NavLink href="/catalog">Catalog</NavLink>
-      {/* <NavLink href="/news">News</NavLink> */}
-      {/* <NavLink href="/advocacy">Advocacy</NavLink> */}
-      {/* <NavLink href="/advocacy">Team</NavLink> */}
-      {/* <NavLink href="/community">Community</NavLink> */}
+      {/* <NavLink href="/news">News</NavLink>
+      <NavLink href="/community">Community</NavLink> */}
       <NavLink href="https://dashboard.auesome.co" tw="lg:ml-10!">
         Dashboard
       </NavLink>
