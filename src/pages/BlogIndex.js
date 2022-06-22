@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import { Container, ContentWithPaddingXl } from "components/misc/Layouts";
+import { Container } from "components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
@@ -19,6 +19,7 @@ import SchoolWork from "images/blog/schoolwork.png";
 import Visual2 from "images/blog/visual2.png";
 import Social from "images/blog/social.png";
 
+const ContentWithPaddingXl = tw.div`max-w-screen-xl mx-auto pb-16 lg:pb-20 pt-8`;
 const allPosts = [
   {
     imageSrc: Exercise,

@@ -7,6 +7,8 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
 import Footer from "components/footers/SimpleFiveColumn";
 import Banner from "../images/blog/allResized/3.png";
+import Children from "../images/blog/3_1.jpeg";
+import Children2 from "../images/blog/3_2.jpeg";
 import { PrimaryButton } from "components/misc/Buttons";
 const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
@@ -17,7 +19,7 @@ const Image = styled.img``;
 const Text = styled.div`
   ${tw`text-lg  text-gray-800 mt-16`}
   p {
-    ${tw`mt-4 leading-loose`}
+    ${tw`my-2 leading-loose`}
   }
   h1 {
     ${tw`text-3xl font-bold mt-10`}
@@ -72,6 +74,7 @@ export default () => {
               professionals to help children enhance their visual thinking
               skills.
             </p>
+            <Image src={Children} />
             <p>
               There are a variety of ways for parents to utilize visual support,
               which can either be made at home or accessed on programs and apps.
@@ -99,6 +102,7 @@ export default () => {
               <li>Hidden picture games</li>
               <li>Building blocks</li>
             </o1>
+            <Image src={Children2} />
             <p>
               A recent study conducted by UC Davis Health at the UC Davis MIND
               Institute has found that an unusual visual inspection of objects

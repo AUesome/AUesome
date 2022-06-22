@@ -7,6 +7,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
 import Footer from "components/footers/SimpleFiveColumn";
 import Banner from "../images/blog/allResized/8.png";
+import Children from "../images/blog/8_1.jpeg";
 import { PrimaryButton } from "components/misc/Buttons";
 const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
@@ -18,7 +19,7 @@ const Image = styled.img``;
 const Text = styled.div`
   ${tw`text-lg  text-gray-800 mt-16`}
   p {
-    ${tw`mt-4 leading-loose`}
+    ${tw`my-2 leading-loose`}
   }
   h1 {
     ${tw`text-3xl font-bold mt-10`}
@@ -78,6 +79,7 @@ export default () => {
               with food selectivity may affect healthy growth and cause nutrient
               deficiencies.
             </p>
+            <Image src={Children} />
             <p>
               Seeking out the right care can help understand and overcome
               feeding issues. For instance, parents and children can work

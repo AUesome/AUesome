@@ -7,6 +7,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
 import Footer from "components/footers/SimpleFiveColumn";
 import Banner from "../images/blog/allResized/9.png";
+import Children from "../images/blog/9_1.jpeg";
 import { PrimaryButton } from "components/misc/Buttons";
 const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
@@ -18,7 +19,7 @@ const Image = styled.img``;
 const Text = styled.div`
   ${tw`text-lg  text-gray-800 mt-16`}
   p {
-    ${tw`mt-4 leading-loose`}
+    ${tw`my-2 leading-loose`}
   }
   h1 {
     ${tw`text-3xl font-bold mt-10`}
@@ -54,54 +55,55 @@ export default () => {
           </HeadingRow>
           <Image src={Banner} />
           <Text>
-            <h1>Eating Habits</h1>
-
+            <h1>Exercise</h1>
             <p>
-              The eating habits of a person with autism, such as eating only
-              selected foods, can influence the physical and mental health.
-              However, deciphering those habits and providing the needed support
-              can help enforce a positive outlook towards eating all types of
-              food.
+              Engaging in physical activity such as sports has shown to be
+              beneficial in many aspects, especially for children on the autism
+              spectrum. Physical activity may assist develop a variety of
+              abilities and contribute to better overall health.
             </p>
             <p>
-              A person with autism can encounter feeding issues early in their
-              childhood, as a child is more likely to come across selective
-              eating, preference for one food over another (such as snacks), and
-              strong dislike of other foods. While these responses may be
-              temporary in a child not on the spectrum, a child with autism may
-              encounter recurring difficulties. For a child on the spectrum,
-              common eating issues may also include difficulties with chewing
-              and swallowing along with not being able to feed oneself due to
-              varied motor skills. A child may also have an unwilling mindset to
-              try foods of an unfamiliar appearance and texture. Said issues
-              with food selectivity may affect healthy growth and cause nutrient
-              deficiencies.
+              Because of their selected interests and engagement in activities,
+              children on the autism spectrum have individualized motor,
+              fitness, and social abilities. Looking specifically into motor
+              skills, variations in movements may result from abnormal
+              connections between neurons in the brain. In a study conducted in
+              November of 2014 by scientists from University of Chicago, it was
+              determined that the affected synapses, which are the connections
+              between neurons, may contribute to varied skill sets in children.
+              These altered connections can lead to the different motor skills
+              observed. Such disparities in skill sets can have an influence on
+              children's physical fitness, leading to poor muscle tone and an
+              increased risk of obesity.
+            </p>
+            <Image src={Children} />
+            <p>
+              Sports, for the most part, may channel a child's repeated
+              behaviors and motions into enhancing a variety of abilities.
+              Sports have been shown to benefit not just a child's skill
+              development but also his or her overall health. Participating in
+              sports, for example, develops a positive outlook and social
+              skills. Sports assist children to gain confidence and become more
+              interested in their environment. This involvement leads to better
+              organization and coordination for children. These are just a few
+              of the many advantages that sports give to all children, not just
+              those on the autism spectrum.
             </p>
             <p>
-              Seeking out the right care can help understand and overcome
-              feeding issues. For instance, parents and children can work
-              together to expand their diet and have a fixed structure and
-              routine. This will make them feel comfortable when trying new
-              foods. Children can also work with therapists to undergo feeding
-              therapy. The main goal of feeding therapy is to look deeper into
-              feeding issues and help children approach new foods with a
-              positive attitude. Feeding therapy can be provided as a part of
-              other therapies such as behavioral and occupational therapy.
-              Behavioral therapy is another type of care that reinforces a
-              positive attitude and works towards helping children feed
-              themselves. The many care options offer helpful interventions.
+              The Fore! Autism Podcast has multiple podcasts exploring news and
+              current events related to autism around the world. Many episodes,
+              such as{" "}
+              <i>
+                Healing Perspectives and Mental Health with Advisory Board
+                Member Merrick Egber
+              </i>{" "}
+              and <i>Interview with Autism Parent Cindy Langenfeld</i>, talk
+              listeners through the world of autism and aid parents and children
+              in leading a healthy lifestyle.
             </p>
             <p>
-              A study published in September of 2020 explored how occupational
-              therapy helped parents and their child to gradually get accustomed
-              to spoon feedings from restrained syringe feedings. The case
-              report showed how effectively occupational therapists evaluated
-              eating habits in children on the spectrum and collaborated with
-              family-friendly services.
-            </p>
-            <p>
-              Dani Bowman, Head of DaniMation Studios, has said, “Anything is
-              possible! If I can do it, so can you!”
+              Stephen Wiltshire, a famous landscape sketch artist on the
+              spectrum, has said, “Do the best you can and never stop.”
             </p>
           </Text>
           <ButtonContainer>

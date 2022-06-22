@@ -7,6 +7,8 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
 import Footer from "components/footers/SimpleFiveColumn";
 import Banner from "../images/blog/allResized/4.png";
+import Children from "../images/blog/4_1.jpeg";
+import Children2 from "../images/blog/4_2.jpeg";
 import { PrimaryButton } from "components/misc/Buttons";
 const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
@@ -18,7 +20,7 @@ const Image = styled.img``;
 const Text = styled.div`
   ${tw`text-lg  text-gray-800 mt-16`}
   p {
-    ${tw`mt-4 leading-loose`}
+    ${tw`my-2 leading-loose`}
   }
   h1 {
     ${tw`text-3xl font-bold mt-10`}
@@ -119,6 +121,7 @@ export default () => {
               the fruit flies, the researchers observed hyperactivity, a common
               characteristic of autism.
             </p>
+            <Image src={Children} />
             <p>
               Like the T356M mutation, there are many other variants in the
               dopamine transporter gene. However, that all impair the function
@@ -200,6 +203,7 @@ export default () => {
               picked to have their whole gene codes recorded with a goal to
               foster more targeted medicines for autism.
             </p>
+            <Image src={Children2} />
             <p>
               Johnston and his family reported that the spectrum nature of
               autism makes it unique for each individual — thus, it is difficult

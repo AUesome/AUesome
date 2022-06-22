@@ -13,7 +13,7 @@ const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
 const SectionHeading = tw.h2`text-4xl sm:text-4xl font-black tracking-wide text-center`;
 const HeadingRow = tw.div`text-center mb-8`;
 const Heading = tw(SectionHeading)`text-gray-900 mb-4 text-center`;
-const Image = styled.img``;
+const Image = styled.img`block m-auto`;
 const Text = styled.div`
   ${tw`text-lg  text-gray-800 mt-16`}
   p {
@@ -85,7 +85,7 @@ export default () => {
               <iframe
                 width="100%"
                 height="500"
-                src={`https://www.youtube.com/embed/Nb-OIImcO-0}`}
+                src="https://www.youtube.com/embed/Nb-OIImcO-0"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -126,7 +126,7 @@ export default () => {
               <iframe
                 width="100%"
                 height="500"
-                src={`https://www.youtube.com/embed/Q2YBR-jRnss}`}
+                src="https://www.youtube.com/embed/Q2YBR-jRnss"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

@@ -12,12 +12,15 @@ import Social from "images/blog/social.png";
 
 export const popularPosts = [
   {
-    imageSrc: Visual,
+    imageSrc: Technology,
+    date: "February 2022",
     author: "Saisri Tangirala",
     editor: "Anshul Gupta",
+    title: "The Relationship between Artificial Intelligence and Autism",
     description:
-      "Out of the four learning styles, children on the autism spectrum often find themselves to learn best by visuals, improving visual motor skills.",
-    title: "Improving Visual Motor Skills with Visual Support",
+      "The world of artificial intelligence has impacted many areas at large, with one of them being autism. With the help of technology, it has become easier to assist children on the autism spectrum.",
+    url: "/the-relationship-between-artificial-intelligence-and-autism/",
+    featured: true,
   },
   {
     imageSrc: Research2,
@@ -26,6 +29,7 @@ export const popularPosts = [
     description:
       "How well has autism been researched and documented? Research is vital to improving current practices and models for interacting with individuals with autism.",
     title: "The Significance of Research in the Autism Spectrum",
+    url: "/the-significance-of-research-in-the-autism-spectrum/",
   },
 ];
 

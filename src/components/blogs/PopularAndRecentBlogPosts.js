@@ -6,6 +6,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading } from "components/misc/Headings.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { popularPosts as popular, posts } from "./Posts.js";
+const PrimaryButton = tw.button`m-auto px-8 py-4 font-bold rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300`;
 
 const Row = tw.div`flex flex-col lg:flex-row -mb-10`;
 const Heading = tw(SectionHeading)`text-left lg:text-4xl xl:text-5xl`;
@@ -64,9 +65,9 @@ export default () => {
   const recentPosts = [
     posts[0],
     posts[1],
-    posts[2],
     posts[3],
     posts[4],
+    posts[6],
     posts[7],
   ];
 
@@ -80,7 +81,7 @@ export default () => {
               {popularPosts.map((post, index) => (
                 <Post
                   key={index}
-                  href={"/blog"}
+                  href={post.url}
                   className="group"
                   initial="rest"
                   whileHover="hover"
@@ -104,9 +105,12 @@ export default () => {
             </PostsContainer>
           </PopularPostsContainer>
           <RecentPostsContainer>
+            <PrimaryButton as="a" href="/blog">
+              View All Blogs
+            </PrimaryButton>
             <PostsContainer>
               {recentPosts.map((post, index) => (
-                <Post key={index} href="/blog" className="group">
+                <Post key={index} href={post.url} className="group">
                   <PostTextContainer>
                     <Title>{post.title}</Title>
                     <AuthorName>by {post.author}</AuthorName>

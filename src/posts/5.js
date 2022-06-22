@@ -7,6 +7,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
 import Footer from "components/footers/SimpleFiveColumn";
 import Banner from "../images/blog/allResized/5.png";
+import Children from "../images/blog/5_1.jpeg";
 import { PrimaryButton } from "components/misc/Buttons";
 const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
@@ -18,7 +19,7 @@ const Image = styled.img``;
 const Text = styled.div`
   ${tw`text-lg  text-gray-800 mt-16`}
   p {
-    ${tw`mt-4 leading-loose`}
+    ${tw`my-2 leading-loose`}
   }
   h1 {
     ${tw`text-3xl font-bold mt-10`}
@@ -78,6 +79,7 @@ export default () => {
               might be unfamiliar to persons on the autism spectrum, but they
               can be learned and developed through skill-building methods.
             </p>
+            <Image src={Children} />
             <p>
               Just like any other skill, children can learn social skills and
               expand them with practice. This may occur in therapy, which can

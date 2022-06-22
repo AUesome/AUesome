@@ -7,6 +7,8 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
 import Footer from "components/footers/SimpleFiveColumn";
 import Banner from "../images/blog/allResized/7.png";
+import Children from "../images/blog/7_1.jpeg";
+import Children2 from "../images/blog/7_2.jpeg";
 import { PrimaryButton } from "components/misc/Buttons";
 const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
@@ -18,7 +20,7 @@ const Image = styled.img``;
 const Text = styled.div`
   ${tw`text-lg  text-gray-800 mt-16`}
   p {
-    ${tw`mt-4 leading-loose`}
+    ${tw`my-2 leading-loose`}
   }
   h1 {
     ${tw`text-3xl font-bold mt-10`}
@@ -79,6 +81,7 @@ export default () => {
               includes benefits of accurate diagnosis and analysis that far
               outweigh the drawbacks.
             </p>
+            <Image src={Children2} />
             <p>
               There are a variety of ways for parents to utilize visual support,
               which can either be made at home or accessed on programs and apps.
@@ -110,6 +113,7 @@ export default () => {
               autism spectrum can have access to innovative care within their
               reach.
             </p>
+            <Image src={Children} />
             <p>
               Researchers are attempting to further apply AI in the autism
               spectrum by formulating tests to predict autism at an early stage.
