@@ -3,7 +3,7 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
-import Footer from "components/footers/FiveColumnWithInputForm.js";
+import Footer from "components/footers/SimpleFiveColumn";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
 import ContactDetails from "components/cards/ThreeColContactDetails.js";
 
@@ -30,7 +30,7 @@ export default () => {
                 <Email>contact@treact.com</Email>
                 <Phone>+1 (203) 991-6988</Phone>
               </>
-            )
+            ),
           },
           {
             title: "Illinois",
@@ -43,7 +43,7 @@ export default () => {
                 <Email>contact@treact.com</Email>
                 <Phone>+1 (203) 991-6988</Phone>
               </>
-            )
+            ),
           },
           {
             title: "California",
@@ -56,7 +56,7 @@ export default () => {
                 <Email>contact@treact.com</Email>
                 <Phone>+1 (203) 991-6988</Phone>
               </>
-            )
+            ),
           },
           {
             title: "Tennessee",
@@ -69,7 +69,7 @@ export default () => {
                 <Email>contact@treact.com</Email>
                 <Phone>+1 (203) 991-6988</Phone>
               </>
-            )
+            ),
           },
           {
             title: "New Jersey",
@@ -82,7 +82,7 @@ export default () => {
                 <Email>contact@treact.com</Email>
                 <Phone>+1 (203) 991-6988</Phone>
               </>
-            )
+            ),
           },
           {
             title: "Ohio",
@@ -95,8 +95,8 @@ export default () => {
                 <Email>contact@treact.com</Email>
                 <Phone>+1 (203) 991-6988</Phone>
               </>
-            )
-          }
+            ),
+          },
         ]}
       />
       <Footer />

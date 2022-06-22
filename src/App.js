@@ -77,7 +77,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import DownloadApp from "components/cta/DownloadApp.js";
 
 // import Footer from "components/footers/SimpleFiveColumn.js";
-// import Footer from "components/footers/FiveColumnWithInputForm.js";
+// import Footer from "components/footers/SimpleFiveColumn";
 // import Footer from "components/footers/FiveColumnWithBackground.js";
 // import Footer from "components/footers/FiveColumnDark.js";
 // import Footer from "components/footers/MiniCenteredFooter.js";
