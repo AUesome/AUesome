@@ -134,6 +134,16 @@ import volunteer from "redirects/volunteer";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import blog1 from "posts/1.js";
+import blog2 from "posts/2.js";
+import blog3 from "posts/3.js";
+import blog4 from "posts/4.js";
+import blog5 from "posts/5.js";
+import blog6 from "posts/6.js";
+import blog7 from "posts/7.js";
+import blog8 from "posts/8.js";
+import blog9 from "posts/9.js";
+
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
@@ -154,6 +164,52 @@ export default function App() {
         <Route path="/privacy-policy" component={Privacy} exact />
         <Route path="/terms-of-service" component={Terms} exact />
 
+        {/* blog */}
+        <Route
+          path="/auesomes-beginning-from-concept-to-product"
+          component={blog1}
+          exact
+        />
+        <Route
+          path="/managing-schoolwork-for-children-on-the-autism-spectrum"
+          component={blog2}
+          exact
+        />
+        <Route
+          path="/improving-visual-motor-skills-with-visual-support"
+          component={blog3}
+          exact
+        />
+        <Route
+          path="/the-significance-of-research-in-the-autism-spectrum"
+          component={blog4}
+          exact
+        />
+        <Route
+          path="/looking-into-social-interactions-for-children-with-autism"
+          component={blog5}
+          exact
+        />
+        <Route
+          path="/the-effects-of-creative-therapy-for-children-with-autism"
+          component={blog6}
+          exact
+        />
+        <Route
+          path="/the-relationship-between-artificial-intelligence-and-autism"
+          component={blog7}
+          exact
+        />
+        <Route
+          path="/looking-deeper-into-eating-habits-for-children-with-autism"
+          component={blog8}
+          exact
+        />
+        <Route
+          path="/the-benefits-of-exercise-for-children-with-autism"
+          component={blog9}
+          exact
+        />
         {/* redirects */}
         <Route path="/app" component={app} exact />
         <Route path="/dashboard" component={dashboard} exact />
