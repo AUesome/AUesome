@@ -17,6 +17,7 @@ import Isabella from "images/profiles/isabella.jpeg";
 import Andrew from "images/profiles/andrew.png";
 import Saisri from "images/profiles/saisri.png";
 import Lauren from "images/profiles/lauren.png";
+import Anne from "images/profiles/annie.png";
 
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)``;
@@ -171,8 +172,7 @@ export default ({
       ],
     },
     {
-      imageSrc:
-        "https://media.wired.com/photos/5ed67e71b818b223fd84195f/1:1/w_1600,h_1600,c_limit/Blackout-hashtag-activism.jpg",
+      imageSrc: Anne,
       position: "Design Director",
       name: "Anne Buchko",
       links: [
