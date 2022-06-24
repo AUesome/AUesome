@@ -36,7 +36,7 @@ const Text = styled.div`
 `;
 export default ({ headingText = "Privacy Policy" }) => {
   return (
-    <AnimationRevealPage>
+    <AnimationRevealPage disabled>
       <Header />
       <Container>
         <ContentWithPaddingXl>
@@ -44,7 +44,7 @@ export default ({ headingText = "Privacy Policy" }) => {
             <Heading>{headingText}</Heading>
           </HeadingRow>
           <Text>
-            <p>Last updated: April 21, 2020</p>
+            <p>Last updated: June 23, 2022</p>
 
             <p>
               This Privacy Policy describes Our policies and procedures on the
@@ -84,13 +84,12 @@ export default ({ headingText = "Privacy Policy" }) => {
               <li>
                 <p>
                   <strong>Company</strong> (referred to as either "the Company",
-                  "We", "Us" or "Our" in this Agreement) refers to Treact.
+                  "We", "Us" or "Our" in this Agreement) refers to AUesome.
                 </p>
               </li>
               <li>
                 <strong>Affiliate</strong> means an entity that controls, is
-                controlled by or is under common control with a party, where
-                "control" means ownership of 50% or more of the shares, equity
+                controlled by or is under common control with a party, equity
                 interest or other securities entitled to vote for election of
                 directors or other managing authority.
               </li>
@@ -100,13 +99,14 @@ export default ({ headingText = "Privacy Policy" }) => {
               </li>
               <li>
                 <strong>Website</strong> refers to Treact, accessible from
-                https://treact.com
+                https://auesome.co
               </li>{" "}
               <li>
                 <strong>Service</strong> refers to the Website.
               </li>
               <li>
-                <strong>Country</strong> refers to: Maharashtra, India
+                <strong>Country</strong> refers to: California, United States of
+                America
               </li>
               <li>
                 <p>

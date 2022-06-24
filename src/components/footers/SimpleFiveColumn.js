@@ -99,12 +99,12 @@ export default () => {
             <LinkListItem>
               <Link href="https://dashboard.auesome.co">Dashboard</Link>
             </LinkListItem>
-            {/* <LinkListItem>
-              <Link href="/terms-of-service">Terms of Service</Link>
+            <LinkListItem>
+              <Link href="/terms-and-conditions">Terms and Conditions</Link>
             </LinkListItem>
             <LinkListItem>
               <Link href="/privacy-policy">Privacy Policy</Link>
-            </LinkListItem> */}
+            </LinkListItem>
           </LinkList>
         </Column>
         <Column>

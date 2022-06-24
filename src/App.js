@@ -143,6 +143,7 @@ import blog6 from "posts/6.js";
 import blog7 from "posts/7.js";
 import blog8 from "posts/8.js";
 import blog9 from "posts/9.js";
+import blog10 from "posts/10.js";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -162,7 +163,7 @@ export default function App() {
         {/* <Route path="/news" component={News} exact /> */}
         {/* <Route path="/community" component={Community} exact /> */}
         <Route path="/privacy-policy" component={Privacy} exact />
-        <Route path="/terms-of-service" component={Terms} exact />
+        <Route path="/terms-and-conditions" component={Terms} exact />
 
         {/* blog */}
         <Route
@@ -208,6 +209,11 @@ export default function App() {
         <Route
           path="/the-benefits-of-exercise-for-children-with-autism"
           component={blog9}
+          exact
+        />
+        <Route
+          path="/the-bond-between-neurodiversity-and-pets"
+          component={blog10}
           exact
         />
         {/* redirects */}

@@ -37,7 +37,7 @@ const Text = styled.div`
 
 export default ({ headingText = "Terms And Condition" }) => {
   return (
-    <AnimationRevealPage>
+    <AnimationRevealPage disabled>
       <Header />
       <Container>
         <ContentWithPaddingXl>
@@ -45,7 +45,7 @@ export default ({ headingText = "Terms And Condition" }) => {
             <Heading>{headingText}</Heading>
           </HeadingRow>
           <Text>
-            <p>Last updated: April 21, 2020</p>
+            <p>Last updated: June 23, 2022</p>
 
             <p>
               Please read these terms and conditions carefully before using Our
@@ -68,18 +68,17 @@ export default ({ headingText = "Terms And Condition" }) => {
             <ul>
               <li>
                 <strong>Affiliate</strong> means an entity that controls, is
-                controlled by or is under common control with a party, where
-                "control" means ownership of 50% or more of the shares, equity
+                controlled by or is under common control with a party, equity
                 interest or other securities entitled to vote for election of
                 directors or other managing authority.
               </li>
               <li>
                 <strong>Company</strong> (referred to as either "the Company",
-                "We", "Us" or "Our" in this Agreement) refers to Treact Inc.,
-                Navi Mumbai.
+                "We", "Us" or "Our" in this Agreement) refers AUesome LLC.
               </li>
               <li>
-                <strong>Country</strong> refers to: Maharashtra, India
+                <strong>Country</strong> refers to: California, United States of
+                America
               </li>
               <li>
                 <strong>Service</strong> refers to the Website.
@@ -97,7 +96,9 @@ export default ({ headingText = "Terms And Condition" }) => {
               </li>
               <li>
                 <strong>Website</strong> refers to Treact, accessible from
-                https://treact.com
+                <a href="https://auesome.co" target="_blank">
+                  https://auesome.co
+                </a>
               </li>
               <li>
                 <strong>You</strong> means the individual accessing or using the
@@ -124,10 +125,6 @@ export default ({ headingText = "Terms And Condition" }) => {
               By accessing or using the Service You agree to be bound by these
               Terms and Conditions. If You disagree with any part of these Terms
               and Conditions then You may not access the Service.
-            </p>
-            <p>
-              You represent that you are over the age of 18. The Company does
-              not permit those under 18 to use the Service.
             </p>
             <p>
               Your access to and use of the Service is also conditioned on Your
@@ -326,8 +323,7 @@ export default ({ headingText = "Terms And Condition" }) => {
             </p>
 
             <ul>
-              <li>By email: support@example.com</li>
-              <li>By phone number: 408.996.1010</li>
+              <li>By email: info@auesome.co</li>
             </ul>
           </Text>
         </ContentWithPaddingXl>

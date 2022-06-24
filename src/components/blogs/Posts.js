@@ -9,6 +9,7 @@ import SchoolWork from "images/blog/schoolwork.png";
 import Visual2 from "images/blog/visual2.png";
 import Research2 from "images/blog/research2.png";
 import Social from "images/blog/social.png";
+import Pet from "images/blog/10.png";
 
 export const popularPosts = [
   {
@@ -34,6 +35,16 @@ export const popularPosts = [
 ];
 
 export const posts = [
+  {
+    imageSrc: Pet,
+    date: "June 2022",
+    author: "Saisri Tangirala",
+    editor: "Anshul Gupta",
+    title: "The Bond Between Neurodiversity and Pets",
+    description:
+      "Engaging in physical activity such as sports has shown to be beneficial in many aspects, especially for children on the autism spectrum. Physical activity may assist develop a variety of abilities and contribute to better overall health.",
+    url: "/the-bond-between-neurodiversity-and-pets/",
+  },
   {
     imageSrc: Exercise,
     date: "May 2022",
