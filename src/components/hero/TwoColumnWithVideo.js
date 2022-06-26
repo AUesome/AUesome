@@ -62,7 +62,7 @@ const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-p
 export default ({
   heading = "Bridging the digital and physical world of at-home therapy, one kit at a time",
   description = "AUesome's mission is to make therapy more accessible and affordable for neurodiverse children on the autism spectrum.",
-  primaryButtonText = "Sign Up",
+  primaryButtonText = "Sign Up for a Kit",
   primaryButtonUrl = "/signup",
   secondaryButtonText = "Read our blog",
   secondaryButtonUrl = "/blog",

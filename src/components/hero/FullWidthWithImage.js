@@ -26,6 +26,8 @@ const PrimaryLink = tw(NavLink)`
   border-b-0
 `;
 
+const Link = tw.a`text-primary-500 underline font-semibold`;
+
 const Container = tw.div`relative mt-8`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row bg-gray-100`;
 const LeftColumn = tw.div`ml-8 mr-8 xl:pl-10 py-8`;
@@ -82,9 +84,9 @@ export default ({
   ),
   description = "",
   primaryActionUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfTl41Gd7DbD7iAiKvwicqO3mXU8nzp1v6LWZ9jWNtQxTqZJw/viewform?usp=sf_link",
-  primaryActionText = "Sign Up!",
+  primaryActionText = "Parent? Sign Up Here!",
   secondaryActionUrl = "https://docs.google.com/forms/d/e/1FAIpQLSeiSrYl4H86W59KMM57z0b6nTMJkK-8h-9iWXreK96Nnz4YEQ/viewform?usp=sf_link",
-  secondaryActionText = "Organization? Sign up here",
+  secondaryActionText = "Organization? Sign Up Here!",
 }) => {
   return (
     <Container>
@@ -95,22 +97,24 @@ export default ({
             <Heading>{heading}</Heading>
             <Paragraph>
               Exclusive to this summer, we'll be providing free AUesome Kits for
-              those with special needs. Sign up below if you're interested! If
-              you're an organization wanting multiple kits, make sure to sign up
-              on the organization form and not the regular form. Note that these
-              kits are funded through our{" "}
-              <a
+              children with special needs. Sign up below if you're interested!
+              Please keep in mind that these kits are funded through our{" "}
+              <Link
                 target="_blank"
                 href="https://www.gofundme.com/f/auesome-athome-therapy-for-children-with-autism"
               >
                 GoFundMe
-              </a>
-              . Please consider supporting us! Our kits consist of specific
-              selected activities from our{" "}
-              <a target="_blank" href="/catalog">
+              </Link>{" "}
+              and we would appreciate any support you can provide. Our kits
+              consist of specific curated activities from our{" "}
+              <Link target="_blank" href="/catalog">
                 catalog
-              </a>
+              </Link>
               .
+              <br />
+              <strong>Note:</strong> If you are a therapist, educator, or admin
+              a part of an organization interested in receiving multiple kits,
+              please sign up on the organization form.
             </Paragraph>
             <Actions>
               <a
