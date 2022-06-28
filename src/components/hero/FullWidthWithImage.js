@@ -112,9 +112,9 @@ export default ({
               </Link>
               .
               <br />
-              <strong>Note:</strong> If you are a therapist, educator, or admin
-              a part of an organization interested in receiving multiple kits,
-              please sign up on the organization form.
+              <strong>Note:</strong> If you are a therapist, educator, admin,
+              etc. a part of an organization interested in receiving multiple
+              kits, please sign up on the organization form.
             </Paragraph>
             <Actions>
               <a
