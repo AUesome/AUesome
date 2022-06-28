@@ -74,7 +74,7 @@ export default ({
       imageSrc: Anshul,
       position: "Co-Founder & President",
       biography:
-        "Anshul is a high-school senior in the Bay Area passionate about technology and neurodiversity. As a co-founder at AUesome, he focuses on product development, design, outreach. He is also a part of the nonprofits Friends of Children with Special Needs, To The Limit Maths, and ThetaHacks outside of AUesome.",
+        "Anshul is a high-school senior in the Bay Area interested in technology and neurodiversity. He co-founded AUesome and serves as its President, overlooking all departments and facilitating all collaborations with organizations, the Board, and parents. He also is the developer of AUesome's software and hardware components.",
       name: "Anshul Gupta",
       links: [
         {
@@ -135,7 +135,7 @@ export default ({
     },
     {
       imageSrc: Lauren,
-      position: "VP of Global Strategy",
+      position: "vice Director",
       name: "Lauren Pearson",
       links: [
         {
