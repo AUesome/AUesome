@@ -9,7 +9,7 @@ import {
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/users.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/heart.svg";
-import TeamIllustrationSrc from "images/logo.png";
+import TeamIllustrationSrc from "images/Advocacy.png";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto pt-20 md:pt-24 pb-8`;

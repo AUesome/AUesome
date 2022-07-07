@@ -7,6 +7,7 @@ import Header from "components/headers/light.js";
 import Footer from "components/footers/SimpleFiveColumn";
 import Feature from "components/features/TwoColWithTwoFeaturesAndButtons";
 import MainFeature1 from "components/features/OneWideCol";
+import CTA from "components/cta/GetStarted";
 import FAQ from "components/faqs/SingleCol";
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 
@@ -15,6 +16,7 @@ export default () => {
     <AnimationRevealPage disabled>
       <Header />
       <Feature />
+      <CTA />
       <MainFeature1 />
       <FAQ />
       <Footer />

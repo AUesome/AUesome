@@ -56,7 +56,7 @@ export default ({
     {
       question: "How large of a time commitment is this?",
       answer:
-        "Starting an AUesome Chapter is not a huge time commitment, averaging around an hour per week. Given that it is more of a self-paced learning experience, commitment can vary based on your time and interests. The only official meetings you have to attend are the onboarding session and our annual leadership get-together.",
+        "Starting an AUesome Chapter averages around 1-2 hours a month. Given that it is more of a self-paced learning experience, commitment can vary based on your time and interests. The only official meetings you have to attend are the onboarding session and our annual leadership get-together.",
     },
     {
       question: "What criteria do I have to fulfill to lead a chapter?",

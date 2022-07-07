@@ -135,7 +135,7 @@ export default ({
     },
     {
       imageSrc: Lauren,
-      position: "vice Director",
+      position: "Public Relations Director",
       name: "Lauren Pearson",
       links: [
         {
