@@ -47,7 +47,7 @@ export default () => {
           <HeadingRow>
             <Heading>AUesome’s Beginning: From Concept to Product</Heading>
             <p>
-              December 2020 • written by <strong>Anshul Gupta</strong> & AUesome
+              August 2020 • written by <strong>Anshul Gupta</strong> & AUesome
               Founding Team
             </p>
           </HeadingRow>

@@ -19,9 +19,19 @@ import SchoolWork from "images/blog/schoolwork.png";
 import Visual2 from "images/blog/visual2.png";
 import Social from "images/blog/social.png";
 import Pet from "images/blog/10.png";
+import Eyes from "images/blog/resized/11.png";
+import Chapters from "images/blog/12.png";
 
 const ContentWithPaddingXl = tw.div`max-w-screen-xl mx-auto pb-16 lg:pb-20 pt-8`;
 const allPosts = [
+  {
+    imageSrc: Chapters,
+    date: "July 2022",
+    author: "Saisri Tangirala",
+    editor: "Anshul Gupta",
+    title: "Advocating for Change: About AUesome Chapters",
+    url: "/advocating-for-change-about-auesome-chapters/",
+  },
   {
     imageSrc: Pet,
     date: "June 2022",
@@ -41,6 +51,14 @@ const allPosts = [
     description:
       "Engaging in physical activity such as sports has shown to be beneficial in many aspects, especially for children on the autism spectrum. Physical activity may assist develop a variety of abilities and contribute to better overall health.",
     url: "/the-benefits-of-exercise-for-children-with-autism/",
+  },
+  {
+    imageSrc: Eyes,
+    date: "April 2022",
+    author: "Saisri Tangirala",
+    editor: "Anshul Gupta",
+    title: "Eyes Can Offer More Insight on Diagnosis in Children",
+    url: "/eyes-can-offer-more-insight-on-diagnosis-in-children",
   },
   {
     imageSrc: Eating,
@@ -114,7 +132,7 @@ const allPosts = [
   },
   {
     imageSrc: LaunchX,
-    date: "December 2020",
+    date: "August 2020",
     author: "Anshul Gupta",
     editor: "Anshul Gupta",
     title: "AUesome’s Beginning: From Concept to Product",

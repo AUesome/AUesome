@@ -144,6 +144,8 @@ import blog7 from "posts/7.js";
 import blog8 from "posts/8.js";
 import blog9 from "posts/9.js";
 import blog10 from "posts/10.js";
+import blog11 from "posts/11.js";
+import blog12 from "posts/12.js";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -214,6 +216,16 @@ export default function App() {
         <Route
           path="/the-bond-between-neurodiversity-and-pets"
           component={blog10}
+          exact
+        />
+        <Route
+          path="/eyes-can-offer-more-insight-on-diagnosis-in-children"
+          component={blog11}
+          exact
+        />
+        <Route
+          path="/advocating-for-change-about-auesome-chapters/"
+          component={blog12}
           exact
         />
         {/* redirects */}

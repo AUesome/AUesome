@@ -8,6 +8,7 @@ import {
 } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import VennDiagram from "images/venndiagram.png";
+import Map from "images/AUesome Map.png";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
@@ -159,6 +160,7 @@ export default ({
           </TextContent>
         </TextColumn>
       </TwoColumn>
+      {/* <Image src={Map} /> */}
     </Container>
   );
 };

@@ -133,25 +133,25 @@ export default ({
         },
       ],
     },
-    {
-      imageSrc: Lauren,
-      position: "Public Relations Director",
-      name: "Lauren Pearson",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
-    },
+    // {
+    //   imageSrc: Lauren,
+    //   position: "Public Relations Director",
+    //   name: "Lauren Pearson",
+    //   links: [
+    //     {
+    //       url: "https://twitter.com",
+    //       icon: TwitterIcon,
+    //     },
+    //     {
+    //       url: "https://linkedin.com",
+    //       icon: LinkedinIcon,
+    //     },
+    //     {
+    //       url: "https://github.com",
+    //       icon: GithubIcon,
+    //     },
+    //   ],
+    // },
     {
       imageSrc: Saisri,
       position: "Editor in Chief",

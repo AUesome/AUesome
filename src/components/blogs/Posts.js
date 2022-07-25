@@ -135,7 +135,7 @@ export const posts = [
   },
   {
     imageSrc: LaunchX,
-    date: "December 2020",
+    date: "August 2020",
     author: "Anshul Gupta",
     editor: "Anshul Gupta",
     title: "AUesome’s Beginning: From Concept to Product",
@@ -229,7 +229,7 @@ export const allPosts = [
   },
   {
     imageSrc: LaunchX,
-    date: "December 2020",
+    date: "August 2020",
     author: "Anshul Gupta",
     editor: "Anshul Gupta",
     title: "AUesome’s Beginning: From Concept to Product",
