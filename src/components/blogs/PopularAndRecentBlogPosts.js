@@ -97,7 +97,7 @@ export default () => {
                   <AuthorInfo>
                     <AuthorNameAndProfession>
                       <AuthorName>by {post.author}</AuthorName>
-                      <AuthorProfile>edited by {post.editor}</AuthorProfile>
+                      {/* <AuthorProfile>edited by {post.editor}</AuthorProfile> */}
                     </AuthorNameAndProfession>
                   </AuthorInfo>
                 </Post>

@@ -16,6 +16,7 @@ import Footer from "components/footers/SimpleFiveColumn";
 import feature1 from "images/features/1.png";
 import feature2 from "images/features/2.png";
 import feature3 from "images/3.png";
+import Gallery from "components/cards/TabCardGrid";
 import Blog from "components/blogs/PopularAndRecentBlogPosts";
 import Advocacy from "components/cards/PortfolioTwoCardsWithImage";
 import Stats from "components/features/ThreeColCenteredStatsPrimaryBackground";
@@ -29,6 +30,7 @@ export default () => {
       <MainFeature />
       <Advocacy />
       {/* <Stats /> */}
+      <Gallery />
 
       <MainFeature1
         subheading={<Subheading>Therapy Kit</Subheading>}

@@ -9,6 +9,7 @@ import Feature from "components/features/TwoColWithTwoFeaturesAndButtons";
 import MainFeature1 from "components/features/OneWideCol";
 import CTA from "components/cta/GetStarted";
 import FAQ from "components/faqs/SingleCol";
+import Locations from "components/cards/ThreeColContactDetails";
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 
 export default () => {
@@ -17,6 +18,7 @@ export default () => {
       <Header />
       <Feature />
       <CTA />
+      <Locations />
       <MainFeature1 />
       <FAQ />
       <Footer />

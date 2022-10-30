@@ -166,7 +166,6 @@ export default function App() {
         {/* <Route path="/community" component={Community} exact /> */}
         <Route path="/privacy-policy" component={Privacy} exact />
         <Route path="/terms-and-conditions" component={Terms} exact />
-
         {/* blog */}
         <Route
           path="/auesomes-beginning-from-concept-to-product"
@@ -230,7 +229,13 @@ export default function App() {
         />
         {/* redirects */}
         <Route path="/app" component={app} exact />
-        <Route path="/dashboard" component={dashboard} exact />
+        <Route
+          path="/dashboard"
+          component={() => {
+            window.location.href = "https://dashboard.auesome.co";
+            return null;
+          }}
+        />{" "}
         <Route path="/design" component={design} exact />
         <Route path="/donate" component={donate} exact />
         <Route path="/feedback" component={feedback} exact />
@@ -246,7 +251,6 @@ export default function App() {
         <Route path="/volunteer" component={volunteer} exact />
         <Route path="/app" component={app} exact />
         <Route path="/app" component={app} exact />
-
         {/* default 404 */}
         <Route path="*" component={Error404} />
       </Switch>

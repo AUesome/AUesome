@@ -97,7 +97,7 @@ export default ({
       imageSrc: AnshulKit,
       profileImageSrc: Anshul,
       customerName: "Anshul Gupta",
-      customerTitle: "Co-Founder & President",
+      customerTitle: "Co-Founder & CEO",
     },
     {
       imageSrc: IsabellaKit,

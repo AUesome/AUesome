@@ -3,15 +3,25 @@ import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
+import { Container } from "components/misc/Layouts.js";
 import { SectionHeading } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as StarIcon } from "images/star-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-5.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-7.svg";
+import image1 from "../../images/kits/andrew.png";
+import image2 from "../../images/kits/fcsn.png";
+import image3 from "../../images/kits/herokits.png";
+import image4 from "../../images/kits/isabella1.png";
+import image5 from "../../images/kits/kipp1.png";
+import image6 from "../../images/kits/isabella2.png";
+import image7 from "../../images/kits/kipp2.png";
+import image8 from "../../images/kits/portal.png";
+import image9 from "../../images/kits/arnav.png";
 
-const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
-const Header = tw(SectionHeading)``;
+const ContentWithPaddingXl = tw.div`max-w-screen-xl mx-auto py-20 lg:py-20`;
+const HeaderRow = tw.div`flex justify-between items-center flex-col`;
+const Header = tw.h2`text-2xl text-center sm:text-4xl font-black tracking-wide text-center`;
 const TabsControl = tw.div`flex flex-wrap bg-gray-200 px-2 py-2 rounded leading-none mt-12 xl:mt-0`;
 
 const TabControl = styled.div`
@@ -66,12 +76,11 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 `;
 
 export default ({
-  heading = "Checkout the Menu",
+  // heading = "AUesome in{<span tw="text-primary-500">Action</span>",
   tabs = {
     Starters: [
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        imageSrc: image1,
         title: "Veg Mixer",
         content: "Tomato Salad & Carrot",
         price: "$5.99",
@@ -80,8 +89,7 @@ export default ({
         url: "#",
       },
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        imageSrc: image2,
         title: "Macaroni",
         content: "Cheese Pizza",
         price: "$2.99",
@@ -90,8 +98,7 @@ export default ({
         url: "#",
       },
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327??ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        imageSrc: image3,
         title: "Nelli",
         content: "Hamburger & Fries",
         price: "$7.99",
@@ -100,8 +107,7 @@ export default ({
         url: "#",
       },
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        imageSrc: image4,
         title: "Jalapeno Poppers",
         content: "Crispy Soyabeans",
         price: "$8.99",
@@ -109,19 +115,9 @@ export default ({
         reviews: "12",
         url: "#",
       },
+
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1473093226795-af9932fe5856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        title: "Cajun Chicken",
-        content: "Roasted Chicken & Egg",
-        price: "$7.99",
-        rating: "4.2",
-        reviews: "19",
-        url: "#",
-      },
-      {
-        imageSrc:
-          "https://images.unsplash.com/photo-1550461716-dbf266b2a8a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        imageSrc: image5,
         title: "Chillie Cake",
         content: "Deepfried Chicken",
         price: "$2.99",
@@ -130,8 +126,7 @@ export default ({
         url: "#",
       },
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        imageSrc: image6,
         title: "Guacamole Mex",
         content: "Mexican Chilli",
         price: "$3.99",
@@ -140,13 +135,21 @@ export default ({
         url: "#",
       },
       {
-        imageSrc:
-          "https://images.unsplash.com/photo-1565310022184-f23a884f29da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
         title: "Carnet Nachos",
+        imageSrc: image8,
         content: "Chilli Crispy Nachos",
         price: "$3.99",
         rating: "3.9",
         reviews: "26",
+        url: "#",
+      },
+      {
+        imageSrc: image9,
+        title: "Cajun Chicken",
+        content: "Roasted Chicken & Egg",
+        price: "$7.99",
+        rating: "4.2",
+        reviews: "19",
         url: "#",
       },
     ],
@@ -167,8 +170,10 @@ export default ({
     <Container>
       <ContentWithPaddingXl>
         <HeaderRow>
-          <Header>{heading}</Header>
-          <TabsControl>
+          <Header>
+            AUesome in {<span tw="text-primary-500">Action</span>}
+          </Header>
+          {/* <TabsControl>
             {Object.keys(tabs).map((tabName, index) => (
               <TabControl
                 key={index}
@@ -178,7 +183,7 @@ export default ({
                 {tabName}
               </TabControl>
             ))}
-          </TabsControl>
+          </TabsControl> */}
         </HeaderRow>
 
         {tabsKeys.map((tabKey, index) => (
@@ -204,20 +209,20 @@ export default ({
               <CardContainer key={index}>
                 <Card
                   className="group"
-                  href={card.url}
+                  // href={card.url}
                   initial="rest"
                   whileHover="hover"
                   animate="rest"
                 >
                   <CardImageContainer imageSrc={card.imageSrc}>
-                    <CardRatingContainer>
+                    {/* <CardRatingContainer>
                       <CardRating>
                         <StarIcon />
                         {card.rating}
                       </CardRating>
                       <CardReview>({card.reviews})</CardReview>
-                    </CardRatingContainer>
-                    <CardHoverOverlay
+                    </CardRatingContainer> */}
+                    {/* <CardHoverOverlay
                       variants={{
                         hover: {
                           opacity: 1,
@@ -231,13 +236,13 @@ export default ({
                       transition={{ duration: 0.3 }}
                     >
                       <CardButton>Buy Now</CardButton>
-                    </CardHoverOverlay>
+                    </CardHoverOverlay> */}
                   </CardImageContainer>
-                  <CardText>
+                  {/* <CardText>
                     <CardTitle>{card.title}</CardTitle>
                     <CardContent>{card.content}</CardContent>
                     <CardPrice>{card.price}</CardPrice>
-                  </CardText>
+                  </CardText> */}
                 </Card>
               </CardContainer>
             ))}

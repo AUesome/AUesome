@@ -72,22 +72,22 @@ const CardMetaFeature = styled.div`
 const CardAction = tw.button`px-8 py-3 font-bold rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 w-full mt-6`;
 
 export default ({
-  subheading = "Collaboration",
+  subheading = "AUesome Chapters",
   headingHtmlComponent = (
     <>
       Neurodiversity <span tw="text-primary-500">advocacy</span> & outreach
     </>
   ),
-  description = "AUesome's mission is to make personalized, interactive resources and therapy for individuals with special needs accessible to all. If you're a part of an organization interested in receiving kits, request a bulk order of materials on our signup page. Alternatively, if you're a student interested in being a leader that wants to make change in your community, be sure to check out our chapters initiative!",
+  description = "AUesome's goal is to make personalized, accessible, and interactive therapy resources. If you're a student interested in being a leader that wants to learn more and advocate for neurodiversity while supporting your local community, be sure to check out our chapters initiative! Join a network global of students, get curated resources and opportunities, and make an impact on those around you.",
   linkText = "AUesome Chapters",
   textOnLeft = false,
 }) => {
   const cards = [
     {
       imageSrc: Executives,
-      company: "AUesome Chapters",
-      type: "Students",
-      title: "Leading and promoting neurodiversity awareness",
+      company: "Learn About Chapters",
+      type: "Advocacy",
+      title: "Explore our initiative and view existing chapters",
       durationText: "Self-paced",
       locationText: "Local community",
       cardLinkText: "Learn More",
@@ -95,13 +95,13 @@ export default ({
     },
     {
       imageSrc: SeveralKits,
-      company: "Organizations",
-      type: "Collaboration",
-      title: "Providing resources to help others at a greater scale",
+      company: "Create a Chapter",
+      type: "Join today!",
+      title: "Sign up to create your own chapter in your community",
       durationText: "Helping others",
       locationText: "Global Impact",
       cardLinkText: "Sign Up",
-      url: "/signup",
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSeTuVnWaGl2MJXEgeM2AsB3mSU9oPEVWGXymL4_joRiTr2vhg/viewform",
     },
   ];
   return (

@@ -77,7 +77,7 @@ export default () => {
       imageSrc: Warning,
       title: "The Problem",
       description:
-        "Despite 1 in 54 children having autism spectrum disorder in the US, 50% of those with severe ASD only have access to school-based treatment and 17% have no access to any treatment whatsoever, with these numbers growing drastically. (CDC)",
+        "Despite 1 in 44 children having autism spectrum disorder in the US, 50% of those with severe ASD only have access to school-based treatment and 17% have no access to any treatment whatsoever, with these numbers growing drastically. (CDC)",
     },
     {
       imageSrc: Sun,

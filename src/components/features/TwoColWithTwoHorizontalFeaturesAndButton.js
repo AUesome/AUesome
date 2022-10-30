@@ -43,7 +43,7 @@ const Heading = tw(
 const Description = tw.p`mt-8 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 const Features = tw.div`mx-auto md:mx-0 flex flex-col lg:flex-row max-w-xs lg:max-w-none`;
-const Feature = tw.div`mt-10 lg:mt-8 flex items-center md:items-start flex-col md:mr-8 last:mr-0`;
+const Feature = tw.div`mt-10 lg:mt-6 flex items-center md:items-start flex-col md:mr-8 last:mr-0`;
 
 const FeatureHeadingContainer = tw.div`flex items-center`;
 const FeatureIconContainer = styled.div`
@@ -69,12 +69,12 @@ export default ({
   subheading = "About AUesome",
   heading = (
     <>
-      Providing at-home special needs <span tw="text-primary-500">therapy</span>{" "}
-      resources across the globe
+      Making <span tw="text-primary-500">therapy</span> more accessible
     </>
   ),
-  description1 = "Therapy for children on the autism spectrum is both financially and geographically inaccessible, while often being non-continuous outside of classrooms and lacking parental involvement.",
-  description2 = "AUesome addresses these limitations by consolidating clinically proven therapy activities into a kit accompanied by a digital platform. Our activities, kits, and digital instructional platform simplify the therapy process for parents and educators of children with special needs.",
+  description1 = "AUesome designs therapy kits for children with autism, accompanied by a digital instructional platform and app. Our activities, kits, and integration with technology simplify the therapy process for parents and special educators.",
+  description2 = "Therapy for children with autism is both financially and geographically inaccessible, while often being non-continuous outside of classrooms and lacking parental involvement. We hope to ameliorate these prevalent barriers.",
+  description3 = "Along with providing kits to families, schools, and organizations, we strive to raise awareness for neurodiversity and therapy through our student-driven Chapters program and direct our Global Kits Initiative in several countries.",
   primaryButtonText = "About Us",
   primaryButtonUrl = "/about",
   imageSrc = VennDiagram,
@@ -99,15 +99,13 @@ export default ({
     {
       Icon: MoneyIcon,
       title: "Accessible",
-      description:
-        "We aim to make our resources as accessible as possible, providing free e-learning instruction with every activity.",
+      description: "With every kit, we provide e-learning guidance.",
       iconContainerCss: tw`bg-teal-300 text-teal-800`,
     },
     {
       Icon: BriefcaseIcon,
       title: "Delivered",
-      description:
-        "We deliver kits at-home or to your school/organization after you send a request for them.",
+      description: "We deliver kits to homes and organizations.",
       iconContainerCss: tw`bg-red-300 text-red-800`,
     },
   ];
@@ -132,6 +130,7 @@ export default ({
             <Heading>{heading}</Heading>
             <Description>{description1}</Description>
             <Description tw="mt-2">{description2}</Description>
+            <Description tw="mt-2">{description3}</Description>
             <Features>
               {features.map((feature, index) => (
                 <Feature key={index}>

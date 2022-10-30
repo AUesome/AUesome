@@ -18,6 +18,7 @@ import Andrew from "images/profiles/andrew.png";
 import Saisri from "images/profiles/saisri.png";
 import Lauren from "images/profiles/lauren.png";
 import Anne from "images/profiles/annie.png";
+// import Kathy from "https://i1.wp.com/cornellsun.com/wp-content/uploads/2020/06/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png?fit=700%2C652&ssl=1";
 
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)``;
@@ -72,9 +73,9 @@ export default ({
   cards = [
     {
       imageSrc: Anshul,
-      position: "Co-Founder & President",
+      position: "Co-Founder & CEO",
       biography:
-        "Anshul is a high-school senior in the Bay Area interested in technology and neurodiversity. He co-founded AUesome and serves as its President, overlooking all departments and facilitating all collaborations with organizations, the Board, and parents. He also is the developer of AUesome's software and hardware components.",
+        "Anshul is a high-school senior in the Bay Area interested in technology and neurodiversity. He co-founded AUesome and serves as its CEO, overlooking all departments and facilitating  collaborations with organizations, the Board, and parents. He also is the developer of AUesome's software and hardware components.",
       name: "Anshul Gupta",
       links: [
         {
@@ -137,6 +138,25 @@ export default ({
     //   imageSrc: Lauren,
     //   position: "Public Relations Director",
     //   name: "Lauren Pearson",
+    //   links: [
+    //     {
+    //       url: "https://twitter.com",
+    //       icon: TwitterIcon,
+    //     },
+    //     {
+    //       url: "https://linkedin.com",
+    //       icon: LinkedinIcon,
+    //     },
+    //     {
+    //       url: "https://github.com",
+    //       icon: GithubIcon,
+    //     },
+    //   ],
+    // },
+    // {
+    //   imageSrc: Kathy,
+    //   position: "Editor in Chief",
+    //   name: "Saisri Tangirala",
     //   links: [
     //     {
     //       url: "https://twitter.com",
