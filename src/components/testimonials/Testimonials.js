@@ -30,7 +30,7 @@ const testimonials = {
     {
       quote:
         "We loved it! My son was especially excited about the push bubble!!",
-      customerName: "Katy Vanderkamp",
+      customerName: "Katy V.",
     },
   ],
   testimonials3: [

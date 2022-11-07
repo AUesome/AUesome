@@ -20,10 +20,14 @@ import AndrewKit from "../../images/profiles/andrewkits.jpg";
 import Anshul from "../../images/profiles/anshul.png";
 import Isabella from "../../images/profiles/isabella.jpeg";
 import Andrew from "../../images/profiles/andrew.png";
+
+import kit1 from "../../images/Vertical Kits/1.png";
+import kit2 from "../../images/Vertical Kits/2.png";
+import kit3 from "../../images/Vertical Kits/3.png";
 import "slick-carousel/slick/slick.css";
 
 const Container = tw.div`relative`;
-const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
+const Content = tw.div`max-w-screen-xl mx-auto pt-16 pb-8`;
 const TestimonialsContainer = tw.div`mt-16 lg:mt-0`;
 const Testimonials = styled.div``;
 const Testimonial = tw.div`max-w-md lg:max-w-none mx-auto lg:mx-0 flex flex-col items-center lg:items-stretch lg:flex-row`;
@@ -80,10 +84,10 @@ export default ({
   subheading = "About",
   heading = "AUesome's Journey",
   description = {
-    des1: "AUesome is a student-driven social enterprise founded in 2020 with the mission of bridging the digital and physical world of at-home therapy for neurodiverse children on the autism spectrum.",
-    des2: "Through collaborating with therapists, professors, doctors, and parents, we consolidate and design clinically proven therapy tools and activities into a therapy kit, paired with an online instructional platform, dashboard.auesome.co, to provide continuous at-home therapy and parent-implemented interventions.",
-    des3: "We provide our kits to schools, nonprofits, center-based treatment facilities, hospitals, parents, and clinics.",
-    des4: "Contact us at info@auesome.co",
+    des1: "AUesome is a student-driven social enterprise founded in 2020 with the mission of bridging the digital and physical world of at-home therapy for neurodiverse children.",
+    des2: "Through collaborating with therapists, professors, doctors, and parents, we're iterated through over 10 kit designs that use clinically proven therapy tools effectively. Paired with our online instructional platform, dashboard.auesome.co, and a mobile app, we hope to provide continuous at-home therapy and parent-implemented interventions.",
+    des3: "We additionally founded our Global Kits Initiative to provide resources internationally and Chapters program to raise awareness for neurodiversity. Contact us at info@auesome.co for questions.",
+    // des4: " provide our kits to schools, nonprofits, center-based treatment facilities, hospitals, parents, and clinics.",
   },
   testimonials = null,
   textOnLeft = false,
@@ -94,22 +98,22 @@ export default ({
    */
   const defaultTestimonials = [
     {
-      imageSrc: AnshulKit,
+      imageSrc: kit3,
       profileImageSrc: Anshul,
-      customerName: "Anshul Gupta",
-      customerTitle: "Co-Founder & CEO",
+      customerName: "Kit Iterations",
+      customerTitle: "2022",
     },
     {
-      imageSrc: IsabellaKit,
+      imageSrc: kit2,
       profileImageSrc: Isabella,
-      customerName: "Isabella He",
-      customerTitle: "Co-Founder & Advisor",
+      customerName: "Kit Iterations",
+      customerTitle: "2021",
     },
     {
-      imageSrc: AndrewKit,
+      imageSrc: kit1,
       profileImageSrc: Andrew,
       customerName: "Andrew Kim",
-      customerTitle: "Co-Founder & Advisor",
+      customerTitle: "2020",
     },
   ];
 
@@ -175,14 +179,11 @@ export default ({
                         </Quote>
                       </QuoteContainer> */}
                       <CustomerInfo>
-                        <CustomerProfilePicture
+                        {/* <CustomerProfilePicture
                           src={testimonial.profileImageSrc}
-                          alt={testimonial.customerName}
-                        />
+                        /> */}
                         <CustomerTextInfo>
-                          <CustomerName>
-                            {testimonial.customerName}
-                          </CustomerName>
+                          <CustomerName>Kit Iterations</CustomerName>
                           <CustomerTitle>
                             {testimonial.customerTitle}
                           </CustomerTitle>

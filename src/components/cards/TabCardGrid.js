@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { Container } from "components/misc/Layouts.js";
+// import { Container } from "components/misc/Layouts.js";
 import { SectionHeading } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as StarIcon } from "images/star-icon.svg";
@@ -18,8 +18,12 @@ import image6 from "../../images/kits/isabella2.png";
 import image7 from "../../images/kits/kipp2.png";
 import image8 from "../../images/kits/portal.png";
 import image9 from "../../images/kits/arnav.png";
+import image10 from "../../images/annie.jpg";
+import image11 from "../../images/sxsw.png";
+import image12 from "../../images/kit_square.png";
 
-const ContentWithPaddingXl = tw.div`max-w-screen-xl mx-auto py-20 lg:py-20`;
+const Container = tw.div`relative bg-gray-200 rounded-xl`;
+const ContentWithPaddingXl = tw.div`max-w-screen-xl mx-auto py-6`;
 const HeaderRow = tw.div`flex justify-between items-center flex-col`;
 const Header = tw.h2`text-2xl text-center sm:text-4xl font-black tracking-wide text-center`;
 const TabsControl = tw.div`flex flex-wrap bg-gray-200 px-2 py-2 rounded leading-none mt-12 xl:mt-0`;
@@ -136,7 +140,7 @@ export default ({
       },
       {
         title: "Carnet Nachos",
-        imageSrc: image8,
+        imageSrc: image10,
         content: "Chilli Crispy Nachos",
         price: "$3.99",
         rating: "3.9",
@@ -145,6 +149,43 @@ export default ({
       },
       {
         imageSrc: image9,
+        title: "Cajun Chicken",
+        content: "Roasted Chicken & Egg",
+        price: "$7.99",
+        rating: "4.2",
+        reviews: "19",
+        url: "#",
+      },
+      {
+        imageSrc: image7,
+        title: "Cajun Chicken",
+        content: "Roasted Chicken & Egg",
+        price: "$7.99",
+        rating: "4.2",
+        reviews: "19",
+        url: "#",
+      },
+      {
+        imageSrc: image12,
+        title: "Cajun Chicken",
+        content: "Roasted Chicken & Egg",
+        price: "$7.99",
+        rating: "4.2",
+        reviews: "19",
+        url: "#",
+      },
+
+      {
+        imageSrc: image11,
+        title: "Cajun Chicken",
+        content: "Roasted Chicken & Egg",
+        price: "$7.99",
+        rating: "4.2",
+        reviews: "19",
+        url: "#",
+      },
+      {
+        imageSrc: image8,
         title: "Cajun Chicken",
         content: "Roasted Chicken & Egg",
         price: "$7.99",

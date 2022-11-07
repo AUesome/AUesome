@@ -160,7 +160,15 @@ export default function App() {
         <Route path="/chapters" component={Clubs} exact />
         <Route path="/blog" component={Blog} exact />
         <Route path="/catalog" component={Catalog} exact />
-        <Route path="/signup" component={Signup} exact />
+        {/* <Route path="/signup" component={Signup} exact /> */}
+        <Route
+          path="/signup"
+          exact
+          component={() => {
+            window.location.href = "https://shop.auesome.co";
+            return null;
+          }}
+        />
         <Route path="/testimonials" component={Testimonials} exact />
         {/* <Route path="/news" component={News} exact /> */}
         {/* <Route path="/community" component={Community} exact /> */}

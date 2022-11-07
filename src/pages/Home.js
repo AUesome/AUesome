@@ -13,7 +13,7 @@ import MainFeature1 from "components/features/TwoColWithButton.js";
 import Hero from "components/hero/TwoColumnWithVideo.js";
 import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton";
 import Footer from "components/footers/SimpleFiveColumn";
-import feature1 from "images/features/1.png";
+import feature1 from "images/nicekit.png";
 import feature2 from "images/features/2.png";
 import feature3 from "images/3.png";
 import Gallery from "components/cards/TabCardGrid";
@@ -35,7 +35,7 @@ export default () => {
       <MainFeature1
         subheading={<Subheading>Therapy Kit</Subheading>}
         heading="Customized at-home therapy kits"
-        description="Customizable at-home therapy kits that help children with special needs improve communication, sensory, and motor skills with various activities. To help us fund our kits, be sure to support us on GoFundMe! Order an AUesome kit by signing up below."
+        description="Our customizable at-home therapy kits help children with special needs improve communication, sensory, and motor skills with various activities curated from a catalog. Order an AUesome kit by signing up below."
         buttonRounded={false}
         primaryButtonText="Sign Up!"
         primaryButtonUrl="/signup"
@@ -44,7 +44,7 @@ export default () => {
       <MainFeature1
         subheading={<Subheading>Digital Integration</Subheading>}
         heading="Walk-through guidance videos"
-        description="Use our detailed, interactive instructional videos to help you with each therapy activities to make at-home therapy as enjoyable, creative, and effective as possible. Our instructional videos will give you ideas for activities to do with the items in our kit."
+        description="Use our detailed, interactive instructional videos to help you with each therapy activities to make at-home therapy as enjoyable, creative, and effective as possible. Our digital guidance will give you ideas for activities to do with the items in our kit."
         buttonRounded={false}
         primaryButtonText="Dashboard"
         imageSrc={feature2}
@@ -54,7 +54,7 @@ export default () => {
       <MainFeature1
         subheading={<Subheading>Digital App</Subheading>}
         heading="AUesome mobile application"
-        description="Coming soon! Our app includes a preliminary diagnosis and survey, games that provide cognitive training for your child, and instructional videos to help guide you while you work on activities in the kit. Support our app's development on our GoFundMe page!"
+        description="Our app includes a preliminary diagnosis and survey, games that provide cognitive training for your child, and instructional videos to help guide you while you work on activities in the kit. Support our app and technology development on our GoFundMe page!"
         buttonRounded={false}
         primaryButtonText="GoFundMe"
         primaryButtonUrl="https://www.gofundme.com/f/auesome-athome-therapy-for-children-with-autism"

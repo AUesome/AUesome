@@ -16,9 +16,9 @@ import Anshul from "images/profiles/anshul.png";
 import Isabella from "images/profiles/isabella.jpeg";
 import Andrew from "images/profiles/andrew.png";
 import Saisri from "images/profiles/saisri.png";
-import Lauren from "images/profiles/lauren.png";
+import Fedor from "images/profiles/fedor.png";
 import Anne from "images/profiles/annie.png";
-// import Kathy from "https://i1.wp.com/cornellsun.com/wp-content/uploads/2020/06/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png?fit=700%2C652&ssl=1";
+import Katherine from "images/profiles/katherine.png";
 
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)``;
@@ -26,7 +26,7 @@ const Subheading = tw(SubheadingBase)`text-center mb-3`;
 const Description = tw(SectionDescription)`mx-auto text-center`;
 
 const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto`;
-const Card = tw.div`mx-0 mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center px-3`;
+const Card = tw.div`mx-0 mt-6 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center px-3`;
 const CardImage = styled.div`
   ${(props) =>
     css`
@@ -60,7 +60,7 @@ export default ({
   description = (
     <>
       AUesome has members across the globe passionate about neurodiversity
-      advocacy. If you're interested in joining our leadership team, sign up{" "}
+      advocacy. If you're interested in joining our leadership team, apply{" "}
       <a
         href="https://www.notion.so/AUesome-Recruitment-ca2a672b14914cabb6ad2d8a8c0e664e"
         style={{ color: "blue" }}
@@ -134,48 +134,10 @@ export default ({
         },
       ],
     },
-    // {
-    //   imageSrc: Lauren,
-    //   position: "Public Relations Director",
-    //   name: "Lauren Pearson",
-    //   links: [
-    //     {
-    //       url: "https://twitter.com",
-    //       icon: TwitterIcon,
-    //     },
-    //     {
-    //       url: "https://linkedin.com",
-    //       icon: LinkedinIcon,
-    //     },
-    //     {
-    //       url: "https://github.com",
-    //       icon: GithubIcon,
-    //     },
-    //   ],
-    // },
-    // {
-    //   imageSrc: Kathy,
-    //   position: "Editor in Chief",
-    //   name: "Saisri Tangirala",
-    //   links: [
-    //     {
-    //       url: "https://twitter.com",
-    //       icon: TwitterIcon,
-    //     },
-    //     {
-    //       url: "https://linkedin.com",
-    //       icon: LinkedinIcon,
-    //     },
-    //     {
-    //       url: "https://github.com",
-    //       icon: GithubIcon,
-    //     },
-    //   ],
-    // },
     {
-      imageSrc: Saisri,
-      position: "Editor in Chief",
-      name: "Saisri Tangirala",
+      imageSrc: Katherine,
+      position: "Tech Director",
+      name: "Anne Buchko",
       links: [
         {
           url: "https://twitter.com",
@@ -195,6 +157,44 @@ export default ({
       imageSrc: Anne,
       position: "Design Director",
       name: "Anne Buchko",
+      links: [
+        {
+          url: "https://twitter.com",
+          icon: TwitterIcon,
+        },
+        {
+          url: "https://linkedin.com",
+          icon: LinkedinIcon,
+        },
+        {
+          url: "https://github.com",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: Fedor,
+      position: "International Coordinator",
+      name: "Fedor Goryanyy",
+      links: [
+        {
+          url: "https://twitter.com",
+          icon: TwitterIcon,
+        },
+        {
+          url: "https://linkedin.com",
+          icon: LinkedinIcon,
+        },
+        {
+          url: "https://github.com",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: Saisri,
+      position: "Editor in Chief",
+      name: "Saisri Tangirala",
       links: [
         {
           url: "https://twitter.com",

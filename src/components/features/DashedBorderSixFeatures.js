@@ -20,7 +20,7 @@ import FastIconImage from "../../images/fast-icon.svg";
 import ReliableIconImage from "../../images/reliable-icon.svg";
 import SimpleIconImage from "../../images/simple-icon.svg";
 
-const Container = tw.div`max-w-screen-xl mx-auto`;
+const Container = tw.div`max-w-screen-xl mx-auto pt-8 pb-16`;
 
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto`}

@@ -24,6 +24,7 @@ export default () => {
     <AnimationRevealPage disabled>
       <Header />
       <About />
+      <TeamCardGrid />
       <Mission />
       {/* <div style={{ paddingTop: "3rem" }}>
         <TeamCardGrid
@@ -50,9 +51,6 @@ export default () => {
           ]}
         />
       </div> */}
-      <div style={{ paddingTop: "4rem", paddingBottom: "6rem" }}>
-        <TeamCardGrid />
-      </div>
       <Footer />
 
       {/* <Features

@@ -9,7 +9,7 @@ import { ReactComponent as LocationIcon } from "feather-icons/dist/icons/map-pin
 import { ReactComponent as TimeIcon } from "feather-icons/dist/icons/clock.svg";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-icon.svg";
 import SeveralKits from "images/kits.jpeg";
-import Executives from "images/Exec.png";
+import Executives from "images/chapters.png";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto pt-20 lg:pt-24 pb-12 lg:pb-16`;
