@@ -85,7 +85,7 @@ export default ({
   heading = "AUesome's Journey",
   description = {
     des1: "AUesome is a student-driven social enterprise founded in 2020 with the mission of bridging the digital and physical world of at-home therapy for neurodiverse children.",
-    des2: "Through collaborating with therapists, professors, doctors, and parents, we're iterated through over 10 kit designs that use clinically proven therapy tools effectively. Paired with our online instructional platform, dashboard.auesome.co, and a mobile app, we hope to provide continuous at-home therapy and parent-implemented interventions.",
+    des2: "Through collaborating with therapists, professors, doctors, and parents, we've iterated through over 10 kit designs that use clinically proven therapy tools effectively. Paired with our online instructional platform, dashboard.auesome.co, and a mobile app, we hope to provide continuous at-home therapy and parent-implemented interventions.",
     des3: "We additionally founded our Global Kits Initiative to provide resources internationally and Chapters program to raise awareness for neurodiversity. Contact us at info@auesome.co for questions.",
     // des4: " provide our kits to schools, nonprofits, center-based treatment facilities, hospitals, parents, and clinics.",
   },

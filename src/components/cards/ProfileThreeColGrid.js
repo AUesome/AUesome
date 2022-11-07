@@ -137,7 +137,7 @@ export default ({
     {
       imageSrc: Katherine,
       position: "Tech Director",
-      name: "Anne Buchko",
+      name: "Katherine Hua",
       links: [
         {
           url: "https://twitter.com",

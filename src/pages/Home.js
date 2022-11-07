@@ -35,7 +35,7 @@ export default () => {
       <MainFeature1
         subheading={<Subheading>Therapy Kit</Subheading>}
         heading="Customized at-home therapy kits"
-        description="Our customizable at-home therapy kits help children with special needs improve communication, sensory, and motor skills with various activities curated from a catalog. Order an AUesome kit by signing up below."
+        description="Our customizable at-home therapy kits help children with special needs improve communication, sensory, and motor skills with various activities curated from a catalog. Order an AUesome Kit by signing up below."
         buttonRounded={false}
         primaryButtonText="Sign Up!"
         primaryButtonUrl="/signup"
