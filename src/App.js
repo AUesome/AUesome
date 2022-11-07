@@ -146,6 +146,7 @@ import blog9 from "posts/9.js";
 import blog10 from "posts/10.js";
 import blog11 from "posts/11.js";
 import blog12 from "posts/12.js";
+import blog13 from "posts/13.js";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -233,6 +234,11 @@ export default function App() {
         <Route
           path="/advocating-for-change-about-auesome-chapters/"
           component={blog12}
+          exact
+        />
+        <Route
+          path="/autism-spectrum-a-parent-perspective"
+          component={blog13}
           exact
         />
         {/* redirects */}

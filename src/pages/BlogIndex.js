@@ -21,9 +21,18 @@ import Social from "images/blog/social.png";
 import Pet from "images/blog/10.png";
 import Eyes from "images/blog/resized/11.png";
 import Chapters from "images/blog/12.png";
+import Perspective from "images/blog/13.png";
 
 const ContentWithPaddingXl = tw.div`max-w-screen-xl mx-auto pb-16 lg:pb-20 pt-8`;
 const allPosts = [
+  {
+    imageSrc: Perspective,
+    date: "August 2022",
+    author: "Saisri Tangirala",
+    editor: "Anshul Gupta",
+    title: "Autism Spectrum: A Parent's Perspective",
+    url: "/autism-spectrum-a-parent-perspective/",
+  },
   {
     imageSrc: Chapters,
     date: "July 2022",
