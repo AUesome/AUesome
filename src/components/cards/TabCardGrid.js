@@ -21,6 +21,7 @@ import image9 from "../../images/kits/arnav.png";
 import image10 from "../../images/annie.jpg";
 import image11 from "../../images/sxsw.png";
 import image12 from "../../images/kit_square.png";
+import image13 from "../../images/kits/ukrainekits.png";
 
 const Container = tw.div`relative bg-gray-200 rounded-xl`;
 const ContentWithPaddingXl = tw.div`max-w-screen-xl mx-auto py-6`;
@@ -85,8 +86,8 @@ export default ({
     Starters: [
       {
         imageSrc: image1,
-        title: "Veg Mixer",
-        content: "Tomato Salad & Carrot",
+        title: "Andrew with Kits",
+        content: "Wave 3",
         price: "$5.99",
         rating: "5.0",
         reviews: "87",
@@ -94,8 +95,8 @@ export default ({
       },
       {
         imageSrc: image2,
-        title: "Macaroni",
-        content: "Cheese Pizza",
+        title: "Distributing kits to FCSN",
+        content: "Friends of Children with Special Needs (FCSN)",
         price: "$2.99",
         rating: "4.8",
         reviews: "32",
@@ -103,8 +104,8 @@ export default ({
       },
       {
         imageSrc: image3,
-        title: "Nelli",
-        content: "Hamburger & Fries",
+        title: "Kits for T-Mobile",
+        content: "Sold 100 kits to their Accessibility Group",
         price: "$7.99",
         rating: "4.9",
         reviews: "89",
@@ -112,8 +113,8 @@ export default ({
       },
       {
         imageSrc: image4,
-        title: "Jalapeno Poppers",
-        content: "Crispy Soyabeans",
+        title: "Isabella Delivering Kits",
+        content: "Wave 2",
         price: "$8.99",
         rating: "4.6",
         reviews: "12",
@@ -121,9 +122,9 @@ export default ({
       },
 
       {
-        imageSrc: image5,
-        title: "Chillie Cake",
-        content: "Deepfried Chicken",
+        imageSrc: image13,
+        title: "AUesome in Ukraine",
+        content: "Customized kits provided to Ukrainian hospital",
         price: "$2.99",
         rating: "5.0",
         reviews: "61",
@@ -131,17 +132,17 @@ export default ({
       },
       {
         imageSrc: image6,
-        title: "Guacamole Mex",
-        content: "Mexican Chilli",
+        title: "Designing & Building Kits",
+        content: "Wave 1",
         price: "$3.99",
         rating: "4.2",
         reviews: "95",
         url: "#",
       },
       {
-        title: "Carnet Nachos",
+        title: "Anne with Kits",
         imageSrc: image10,
-        content: "Chilli Crispy Nachos",
+        content: "Wave 4",
         price: "$3.99",
         rating: "3.9",
         reviews: "26",
@@ -149,8 +150,8 @@ export default ({
       },
       {
         imageSrc: image9,
-        title: "Cajun Chicken",
-        content: "Roasted Chicken & Egg",
+        title: "Arnav with Kits",
+        content: "Wave 3",
         price: "$7.99",
         rating: "4.2",
         reviews: "19",
@@ -158,27 +159,27 @@ export default ({
       },
       {
         imageSrc: image7,
-        title: "Cajun Chicken",
-        content: "Roasted Chicken & Egg",
+        title: "Delivering Kits to KIPP",
+        content: "KIPP San Jose Collegiate",
         price: "$7.99",
         rating: "4.2",
         reviews: "19",
         url: "#",
       },
       {
-        imageSrc: image12,
-        title: "Cajun Chicken",
-        content: "Roasted Chicken & Egg",
+        imageSrc: image5,
+        title: "Delivering Kits to KIPP",
+        content: "KIPP Heartwood Academy",
         price: "$7.99",
         rating: "4.2",
         reviews: "19",
         url: "#",
       },
-
       {
         imageSrc: image11,
-        title: "Cajun Chicken",
-        content: "Roasted Chicken & Egg",
+        title: "Pitching at SXSW EDU",
+        content:
+          "South by Southwest EDU 2022 Student Startup Competition Winner",
         price: "$7.99",
         rating: "4.2",
         reviews: "19",
@@ -186,8 +187,8 @@ export default ({
       },
       {
         imageSrc: image8,
-        title: "Cajun Chicken",
-        content: "Roasted Chicken & Egg",
+        title: "Working with schools",
+        content: "Distributing kits to local elementary school",
         price: "$7.99",
         rating: "4.2",
         reviews: "19",
@@ -279,11 +280,11 @@ export default ({
                       <CardButton>Buy Now</CardButton>
                     </CardHoverOverlay> */}
                   </CardImageContainer>
-                  {/* <CardText>
+                  <CardText>
                     <CardTitle>{card.title}</CardTitle>
                     <CardContent>{card.content}</CardContent>
-                    <CardPrice>{card.price}</CardPrice>
-                  </CardText> */}
+                    {/* <CardPrice>{card.price}</CardPrice> */}
+                  </CardText>
                 </Card>
               </CardContainer>
             ))}

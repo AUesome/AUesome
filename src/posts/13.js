@@ -51,8 +51,8 @@ export default () => {
           <HeadingRow>
             <Heading>Autism Spectrum: A Parent's Perspective</Heading>
             <p>
-              July 2022 • written by <strong>Saisri Tangirala</strong> • edited
-              by <strong>Anshul Gupta</strong>
+              August 2022 • written by <strong>Saisri Tangirala</strong> •
+              edited by <strong>Anshul Gupta</strong>
             </p>
           </HeadingRow>
           <Image src={Banner} />
